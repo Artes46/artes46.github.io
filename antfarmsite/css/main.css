@@ -654,6 +654,7 @@ button.owl-next {
       padding-top: 30px; } }
 
 .descript__bg-text {
+  display: none;
   position: absolute;
   bottom: 23px;
   left: -15px;
