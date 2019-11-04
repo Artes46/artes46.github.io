@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="scrollup">
+    <div class="scrollup__img-wrapper"><img class="scrollup__img" src="../img/gotop.svg" alt=""></div>
+  </div>
+  <div class="social-circle">
+    <img src="../img/descript-circle.png" alt="" class="social-circle__img">
+    <div class="social-circle__links">
+      <a href="#" class="social-circle__link social-circle__link--vk"><img src="../img/vk2.svg" alt="" class="social-circle__img"></a>
+      <a href="#" class="social-circle__link social-circle__link--inst"><img src="../img/inst2.svg" alt="" class="social-circle__img"></a>
+      <a href="#" class="social-circle__link social-circle__link--youtube"><img src="../img/youtube2.svg" alt="" class="social-circle__img"></a>
+    </div>
+  </div>
+  <div class="fog-animation-2__wrapper">
+    <div class="fog-animation-2__item fog-animation-2__item--1"></div>
+    <div class="fog-animation-2__item fog-animation-2__item--2"></div>
+  </div>
+  <div class="fog-animation__wrapper">
+    <div class="fog-animation__item fog-animation__item--1"></div>
+    <div class="fog-animation__item fog-animation__item--2"></div>
+  </div>
+
+  <div id="modal-wrapper" class="modal-wrapper">
+    <div class="modal">
+      <div class="modal__close-btn-wrapper">
+        <a href="" class="modal__close-btn">Закрыть</a>
+      </div>
+      <h3 class="modal__title">Оставьте ваше сообщение</h3>
+
+      <form action="" class="contacts__form">
+
+        <div class="form__fields form__fields--modal">
+
+          <div class="fields__wrapper">
+            <div class="fields__select-wrapper">
+              <p class="fields__select-title">Ваша ферма</p>
+              <select class="fields__select" id="order-farm" name="farm" required="">
+                <option class="option__title" value="" selected disabled>Выберите ферму</option>
+                <option class="antlife-start" value="Antlife Start">Antlife Start</option>
+                <option value="Antlife Start + муравьи">Antlife Start + муравьи</option>
+                <option value="Antlife Pro">Antlife Pro</option>
+                <option value="Antlife Pro + муравьи">Antlife Pro + муравьи</option>
+              </select>
+            </div>
+            <div class="fields__one-block">
+              <div class="fields__item fields__item--modal">
+                <label for="field-name">Имя</label>
+                <input type="text" id="order-field-name" class="fields__name" placeholder="Ваше имя...">
+              </div>
+              <div class="fields__item fields__item--modal">
+                <label for="field-name">Email</label>
+                <input type="text" id="order-field-email" class="fields__name" placeholder="example-mail@example.ru">
+              </div>
+            </div>
+            <div class="fields__two-block">
+              <div class="fields__item fields__item--modal">
+                <label for="field-name">Телефон</label>
+                <input type="text" id="order-field-phone" class="fields__name" placeholder="+X (XXX) XXX-XX-XX">
+              </div>
+              <div class="fields__item fields__item--modal">
+                <label for="field-name">Сообщение</label>
+                <input type="text" id="order-field-msg" class="fields__name" placeholder="Ваше сообщение...">
+              </div>
+            </div>
+          </div>
+          <button class="btn form__btn" id="order__btn" type="button" name="button">Отправить</button>
+          <div id="order-error-block"></div>
+        </div>
+      </form>
+
+    </div>
+    <div class="overlay"></div>
+  </div>
+  <header class="main-header">
+    <div class="container container--header">
+      <div class="main-header__top-wrapper">
+        <div class="main-header__logo">
+          <a href="" class="logo__link">
+            <img src="../img/ant-logo-2.svg" alt="" class="logo__img">
+          </a>
+        </div>
+        <div class="main-header__phone">
+          <p class="phone__item">+7 (951) 335-26-54</p>
+          <a href="#modal-link" id="callback" class="phone__link">Заказать звонок</a>
+          <div id="callback-modal" class="header-callback">
+            <form class="callback__form" action="">
+               <div class="callback__item">
+                    <!-- <label for="field-name">Как вас зовут?</label> -->
+                    <input type="text" id="callback-name" class="callback__field" placeholder="Как вас зовут?">
+                </div>
+                <div class="callback__item">
+                    <!-- <label for="field-name">Номер телефона</label> -->
+                    <input type="tel" id="callback-phone" class="callback__field" placeholder="Номер телефона">
+                </div>
+
+                <div id="callback-error-block"></div>
+                <button id="callback-btn" class="callback-btn btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+          <button class="main-nav__btn"></button>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a href="#what-is-it" class="main-nav__link">Что это?</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#catalog" class="main-nav__link">Каталог</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#inhabitants" class="main-nav__link">Обитатели</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#question" class="main-nav__link">Вопрос-ответ</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#contacts" class="main-nav__link">Контакты</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#delivery" class="main-nav__link">Доставка</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+    <section class="descript">
+      <div class="container descript__container">
+        <p class="descript-text">Домашняя муравьиная ферма</p>
+        <a href="#catalog" class="btn descript-btn">В каталог</a>
+        <div class="descript__bg-text">
+          <p class="descript__bg-text-item">formicarium</p>
+        </div>
+        <div class="descript__ant">
+          <img src="../img/main-ant.png" alt="">
+        </div>
+
+        <div class="descript__ant2">
+          <!-- <img src="../img/ant-head.png" alt=""> -->
+           <!-- <img src="../img/ant-us.png" alt=""> -->
+        </div>
+
+        <div class="descript__anthill">
+          <img src="../img/anthill2.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section id="what-is-it" class="interesting">
+      <div class="container">
+        <h2 class="interesting__title">Муравьи - это интересно!</h2>
+        <p class="interesting__descr">Муравьи - это очень интересные и загадочные существа!  Чем то похожи на нас с вами.
+          За муравьями можно наблюдать круглые сутки, они постоянно в работе. Маленькие трудяги строят, взаимодействуют друг с другом, создают и развивают.  
+          Ферма - яркий и креативный подарок, который подойдет как школьнику,  так и боссу большой корпорации.
+
+        !!!!! Представьте радость вашего ребёнка во время подарка формикария !!!!</p>
+          <div class="interesting__cards-wrapper">
+            <div class="interesting__card-column">
+              <div class="interesting__card">
+                <img src="../img/happy-baby.png" alt="" class="interesting__card-icon">
+                <h3 class="interesting__card-title">Для детей</h3>
+                <p class="interesting__card-descr">Муравейник развивает внимательность и учит детей ответственности,
+                  ведь насекомым нужен уход. Уборка и кормление муравьев развивает мелкую моторику. </p>
+                </div>
+                <div class="interesting__card-img interesting__card-img--1">
+                  <!-- <img class="interesting__card-img-item" src="../img/interesting-img-1.png" alt=""> -->
+                </div>
+              </div>
+              <div class="interesting__card-column">
+                <div class="interesting__card-img interesting__card-img--2">
+                  <!-- <img class="interesting__card-img-item" src="../img/interesting-img-2.png" alt=""> -->
+                </div>
+                <div class="interesting__card">
+                  <img src="../img/couple.png" alt="" class="interesting__card-icon">
+                  <h3 class="interesting__card-title">Для взрослых</h3>
+                  <p class="interesting__card-descr">Взрослым помогает расслабиться. После трудного
+                    рабочего дня приятно заглянуть в эту маленькую,
+                    обустроенную цивилизацию, где все протекает спокойно и слаженно. </p>
+                  </div>
+                </div>
+                <div class="interesting__card-column">
+                  <div class="interesting__card">
+                    <img src="../img/work.png" alt="" class="interesting__card-icon">
+                    <h3 class="interesting__card-title">Для офиса</h3>
+                    <p class="interesting__card-descr">Идеально впишется в офисный интерьер.
+                      Когда сроки поджимают, а вы ничего не успеваете, то посмотрите на этих крошечных
+                      трудоголиков - они придадут сил вашим начинаниям.</p>
+                    </div>
+                    <div class="interesting__card-img interesting__card-img--3">
+                      <!-- <img class="interesting__card-img-item" src="../img/interesting-img-1.png" alt=""> -->
+                    </div>
+                  </div>
+                </div>
+
+      </div>
+    </section>
+
+      <section class="advantages container">
+        <div class="container">
+          <h2 class="advantages__title">Ферма - это красиво, практично и модно!</h2>
+          <div class="advantages__wrapper">
+            <div class="advantages__card">
+              <img src="../img/fireworks.png" alt="" class="advantages__icon">
+              <h3 class="advantages__card-title">Дизайн</h3>
+              <p class="advantages__card-text">Ферма - красивый элемент декора вашей комнаты или офиса</p>
+            </div>
+            <div class="advantages__card">
+              <img src="../img/minimize.png" alt="" class="advantages__icon">
+              <h3 class="advantages__card-title">Компактность</h3>
+              <p class="advantages__card-text">Поместите её где угодно:
+                на полке, письменном столе или маленькой тумбочке</p>
+              </div>
+              <div class="advantages__card">
+                <img src="../img/present.png" alt="" class="advantages__icon">
+                <h3 class="advantages__card-title">Отличный подарок</h3>
+                <p class="advantages__card-text">Запоминающийся подарк на Новый год или день рождения</p>
+              </div>
+            </div>
+        </div>
+      </section>
+    <section id="catalog" class="catalog">
+      <div class="container catalog__container">
+        <h2 class="catalog__title">Каталог муравьиных ферм</h2>
+        <div class="catalog__cards-wrapper">
+          <div class="catalog__text-card">
+            <h3 class="text-card__title">Три фермы на выбор!</h3>
+            <p class="text-card__descr">Все фермы отличаются отменным качеством. Выполнены с соблюдением всех самых передовых технологий. Красота, надежность, безопасность - все это воплотили в себе муравьиные фермы</p>
+            <p class="text-card__descr">Фермы от проверенного производителя, продуманы до мелочей, методом проб и ошибок найдена оптимальная конструкция.</p>
+            <p class="text-card__descr">Специально для вас уникальный дизайн ферм! Космические, природные, любых цветов.</p>
+            <p class="text-card__descr">Равным образом новая модель организационной деятельности позволяет выполнять важные задания по разработке соответствующий условий активизации. Не следует, однако забывать, что сложившаяся структура организации способствует подготовки и реализации дальнейших направлений развития.</p>
+            <p class="text-card__descr">Заполняющий лорем ипсум </p>
+          </div>
+          <div class="catalog__card">
+            <!-- <a href="" class="card__arrow card__arrow--left">
+              <img src="../img/arrow-left.svg" alt="" class="card__arrow-img card__arrow-img--left">
+            </a>
+            <a href="" class="card__arrow card__arrow--right">
+              <img src="../img/arrow-right.svg" alt="" class="card__arrow-img card__arrow-img--right">
+            </a> -->
+            <div id="owl-carousel--1" class="owl-carousel owl-theme">
+              <div><img src="../img/card-img.png" alt="" class="card__img"></div>
+              <div><img src="../img/card-img.png" alt="" class="card__img"></div>
+              <div><img src="../img/card-img.png" alt="" class="card__img"></div>
+            </div>
+
+            <div class="card__text-wrapper">
+              <div class="card__text-block">
+                <h3 class="card__title">Antlife (дерево)</h3>
+                <p class="card__text-content">Дизайнерская муравьиная ферма  со встроенной объемной ареной. Корм на год, лупа, декоративный песок в комплекте.</p>
+              </div>
+              <div class="card__cost-wrapper">
+                <p class="card__cost">4600 <span>руб.</span> </p>
+                <a href=""  class="btn card-btn">заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <!-- <a href="" class="card__arrow card__arrow--left">
+              <img src="../img/arrow-left.svg" alt="" class="card__arrow-img card__arrow-img--left">
+            </a>
+            <a href="" class="card__arrow card__arrow--right">
+              <img src="../img/arrow-right.svg" alt="" class="card__arrow-img card__arrow-img--right">
+            </a> -->
+
+            <div id="owl-carousel--2" class="owl-carousel owl-theme">
+              <div><img src="../img/card-img.png" alt="" class="card__img"></div>
+              <div><img src="../img/card-img.png" alt="" class="card__img"></div>
+              <div><img src="../img/card-img.png" alt="" class="card__img"></div>
+            </div>
+            <div class="card__text-wrapper">
+              <div class="card__text-block">
+                <h3 class="card__title">Antlife (дерево)</h3>
+                <p class="card__text-content">Дизайнерская муравьиная ферма  со встроенной объемной ареной. Корм на год, лупа, декоративный песок в комплекте.</p>
+              </div>
+              <div class="card__cost-wrapper">
+                <p class="card__cost">4600 <span>руб.</span> </p>
+                <a href="" class="btn card-btn">заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <!-- <a href="" class="card__arrow card__arrow--left">
+              <img src="../img/arrow-left.svg" alt="" class="card__arrow-img card__arrow-img--left">
+            </a>
+            <a href="" class="card__arrow card__arrow--right">
+              <img src="../img/arrow-right.svg" alt="" class="card__arrow-img card__arrow-img--right">
+            </a> -->
+
+            <div id="owl-carousel--3" class="owl-carousel owl-theme">
+              <div><img src="../img/card-img.png" alt="" class="card__img"></div>
+              <div><img src="../img/card-img.png" alt="" class="card__img"></div>
+              <div><img src="../img/card-img.png" alt="" class="card__img"></div>
+            </div>
+            <div class="card__text-wrapper">
+              <div class="card__text-block">
+                <h3 class="card__title">Antlife (дерево)</h3>
+                <p class="card__text-content">Дизайнерская муравьиная ферма  со встроенной объемной ареной. Корм на год, лупа, декоративный песок в комплекте.</p>
+              </div>
+              <div class="card__cost-wrapper">
+                <p class="card__cost">4600 <span>руб.</span> </p>
+                <a href=""  class="btn card-btn">заказать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="catalog__number"><img src="../img/number.png" alt="" class="catalog__number-image"></div>
+      </div>
+    </section>
+    <section class="scheme">
+      <picture class="scheme__branch-1">
+        <source media="(min-width:"1300px")" srcset="../img/branch3.png 1x"><source/>
+        <source media="(min-width:"768px")" srcset="../img/branch3.png 1x"><source/>
+        <img src="../img/branch2.png" alt="">
+      </picture>
+
+      <img class="scheme__branch-2" src="../img/branch3.png" alt="">
+      <div class="container">
+        <h2 class="scheme__title">Схема муравьиной фермы</h2>
+        <img src="../img/scheme.jpg" alt="" class="scheme__img">
+      </div>
+    </section>
+    <section class="kit">
+      <div class="container">
+        <h2 class="kit__title">Что в комплекте</h2>
+        <div class="kit__cards">
+          <div class="kit__cards-left">
+            <div class="kit__card kit__card--1">
+              <h4 class="kit__card-title">Инструкция</h4>
+              <p class="kit__card-subtitle">все об уходе</p>
+              <!-- <img src="../img/kit-img-1.png" alt="" class="kit__img"> -->
+              <p class="kit__descr"></p>
+            </div>
+          </div>
+          <div class="kit__cards-right">
+            <div class="kit__card kit__card--2">
+              <h4 class="kit__card-title">Декоративный песок</h4>
+              <p class="kit__card-subtitle">(3 цвета)</p>
+              <!-- <img src="../img/kit-img-2.png" alt="" class="kit__img"> -->
+              <p class="kit__descr"></p>
+            </div>
+            <div class="kit__card kit__card--3">
+              <h4 class="kit__card-title">Покушать муравьям</h4>
+              <p class="kit__card-subtitle">на один год</p>
+              <!-- <img src="../img/kit-img-3.png" alt="" class="kit__img"> -->
+              <p class="kit__descr"></p>
+            </div>
+            <div class="kit__card kit__card--4">
+              <h4 class="kit__card-title">Пипетка</h4>
+              <p class="kit__card-subtitle">кап-кап</p>
+             <!--  <img src="../img/kit-img-4.png" alt="" class="kit__img"> -->
+              <p class="kit__descr"></p>
+            </div>
+          </div>
+          <div class="kit__card kit__card--5">
+
+              <p class="kit__descr">до <span class="kit__card-text-style">31 декабря</span> <br> лупа в подарок!</p>
+
+              <p class="kit__descr-time-left">осталось мало времени</p>
+              <a href=""  class="btn kit__card-btn card-btn">Заказать</a>
+
+              <!-- <p class="kit__card-time kit__card-time--day"><span>16</span> дней</p>
+              <p class="kit__card-time kit__card-time--hours"><span>384</span> часов</p>
+              <p class="kit__card-time kit__card-time--minuts"><span>2304</span> минут</p>
+              <p class="kit__card-time kit__card-time--seconds"><span>1382400</span> секунд</p> -->
+            </div>
+            <div class="kit__card kit__card--6">
+              <h4 class="kit__card-title">Лупа</h4>
+              <p class="kit__card-subtitle">дарим</p>
+              <!-- <img src="../img/kit-img-6.png" alt="" class="kit__img"> -->
+              <p class="kit__descr"></p>
+            </div>
+        </div>
+      </div>
+    </section>
+   <!--  <section class="inhabitants">
+      <div class="container">
+        <h2 class="inhabitants__title">Обитатели фермы</h2>
+        <p class="inhabitants__sub-title">Lorem ipsum dolor sit amet</p>
+        <p class="inhabitants__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="inhabitants__card-wrapper">
+          <div class="inhabitants__card inhabitants--xl">
+            <p class="inhabitants__card-title">Матка</p>
+            <p class="inhabitants__text">Я королева! Я тут самая главная! <br> Всю жизнь откладываю яйца <br> и слежу за порядком в доме.</p>
+          </div>
+          <div class="inhabitants__card inhabitants--l">
+            <p class="inhabitants__card-title">Солдат</p>
+            <p class="inhabitants__text">Я крупный рабочий, дроблю семена, а в случае опасности буду защищать колонию</p>
+          </div>
+          <div class="inhabitants__card inhabitants--m">
+            <p class="inhabitants__card-title">Рабочий</p>
+            <p class="inhabitants__text">Добываю пищу, ухаживаю <br> за подрастающим поколением <br> и нашей королевой</p>
+          </div>
+          <div class="inhabitants__card inhabitants--xs">
+            <p class="inhabitants__card-title">Куколка</p>
+            <p class="inhabitants__text">Cовсем скоро стану взрослой</p>
+          </div>
+          <div class="inhabitants__card inhabitants--s">
+            <p class="inhabitants__card-title">Личинка</p>
+            <p class="inhabitants__text">Когда вырасту, стану куколкой)</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="inhabitants-2">
+        <div class="container">
+      <h2 class="inhabitants-2__title">Обитатели фермы</h2>
+      <!-- <p class="inhabitants__sub-title">Lorem ipsum dolor sit amet</p> -->
+      <p class="inhabitants-2__descr">Муравьишки живут большой семьей. Каждая особь имеет определенную задачу и свою значимость. Но все они трудятся на благо общей цели. По сути, муравьев можно сравнить с людьми, только нам еще можно поучиться их терпимости, трудолюбию и слаженности в работе. «Пашет, как муравей» — говорим мы о трудолюбивом человеке, представляя себе маленькую букашку, которая тащит предмет в несколько раз превышающий его вес и размер.</p>
+
+      <div class="inhabitants-2">
+
+          <div id="owl-carousel-inhabitants" class="owl-carousel owl-theme">
+            <div class="inhabitants-2__slide">
+              <div class="inhabitants-2__slide-img">
+                <img src="../img/ant-matka-2.png" alt="" class="card__img">
+              </div>
+                <div class="inhabitants-2__slide-text">
+                  <p class="inhabitants-2__slider-title">Матка</p>
+                  <p class="inhabitants-2__slide-text-content">Я королева! Я тут самая главная! <br> Всю жизнь откладываю яйца и слежу за порядком в доме.</p>
+                </div>
+            </div>
+            <div class="inhabitants-2__slide">
+              <div class="inhabitants-2__slide-img">
+                <img src="../img/soldier.png" alt="" class="card__img">
+              </div>
+                <div class="inhabitants-2__slide-text">
+                  <p class="inhabitants-2__slider-title">Солдат</p>
+                  <p class="inhabitants-2__slide-text-content">Я крупный рабочий, дроблю семена, а в случае опасности буду защищать колонию!</p>
+                </div>
+            </div>
+            <div class="inhabitants-2__slide">
+              <div class="inhabitants-2__slide-img">
+                <img src="../img/rab.png" alt="" class="card__img">
+              </div>
+                <div class="inhabitants-2__slide-text">
+                  <p class="inhabitants-2__slider-title">Рабочий</p>
+                  <p class="inhabitants-2__slide-text-content">Добываю пищу, ухаживаю за подрастающим поколением и нашей королевой</p>
+                </div>
+            </div>
+            <div class="inhabitants-2__slide">
+              <div class="inhabitants-2__slide-img">
+                <img src="../img/kukolka.png" alt="" class="card__img">
+              </div>
+                <div class="inhabitants-2__slide-text">
+                  <p class="inhabitants-2__slider-title">Куколка</p>
+                  <p class="inhabitants-2__slide-text-content">Cовсем скоро стану взрослой</p>
+                </div>
+            </div>
+            <div class="inhabitants-2__slide">
+              <div class="inhabitants-2__slide-img">
+                <img src="../img/lichinus.png" alt="" class="card__img">
+              </div>
+                <div class="inhabitants-2__slide-text">
+                  <p class="inhabitants-2__slider-title">Личинка</p>
+                  <p class="inhabitants-2__slide-text-content">Когда вырасту, стану куколкой)</p>
+                </div>
+            </div>
+
+            <!-- <div class="inhabitants-2__control-wrapper">
+              <div class="inhabitants-2__control-item control-item--left">
+                <p class="inhabitants-2__control-text">Назад</p>
+              </div>
+              <div class="inhabitants-2__control-item control-item--right">
+                <p class="inhabitants-2__control-text">Вперед</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="question" class="question">
+      <div class="container">
+        <h2 class="question__title">Вопрос-ответ</h2>
+        <div class="accordion-wrapper">
+          <button class="accordion">Как ухаживать?</button>
+          <div class="panel">
+            <p>В формикарии регулируйте нужную влажность и температуру. Обычно ферму увлажняют от двух до пяти раз в неделю, капая воду в специальную емкость. Часть камер должна оставаться сухой.  Не забывайте покормить. Раз в 1-2 недели убирайте с арены мусор, который выносят муравьи, используйте для этого пинцет.</p>
+          </div>
+
+          <button class="accordion">А они не убегут?</button>
+          <div class="panel">
+            <p>Фермы сконструированы таким образом, что муравьи не могут самостоятельно их покинуть. Да и не захотят, если в домике комфортно.
+              Мы комплектуем фермы специальным видом муравьев -  Messor structor (степные жнецы). Они не приспособлены к жизни в наших широтах и в жилых строениях, если вдруг они разбегутся, то не заразят квартиру, а, к сожалению, погибнут. Пожалуйста, не допускайте этого!
+              Против побега существуют средства, которые так и называют — «антипобег». Можно купить готовый раствор или использовать вазелин, тальк, смешанный с алкоголем, либо детское масло. Если ферму намазали каким-то из этих веществ, то закрывать крышку не надо.
+            </p>
+          </div>
+
+          <button class="accordion">С каждым днем их становится все больше, что делать?</button>
+          <div class="panel">
+            <p>Как только популяция достигнет критической точки и места для новых особей не останется, они перестанут размножаться. Поэтому будет ли муравьиная ферма развиваться дальше, решать только вам. Если ваша цель многотысячная колония, тогда расширьте ферму, подсоединив к ней еще одну или переселите муравьишек в другую.</p>
+          </div>
+
+          <button class="accordion">Сколько живут?</button>
+          <div class="panel">
+            <p>Продолжительность жизни колонии обусловлена сроком жизни королевы (матки), а она в среднем живёт 20 лет, сохраняя способность к воспроизводству. Рабочие муравьи и солдаты живут примерно 3 года. Останки погибших сородичей мураши выносят на арену. Королева в процессе существования колонии восполняет потери. Таким образом колония существует, пока жива матка.</p>
+          </div>
+
+          <button class="accordion">Что в комплекте?</button>
+          <div class="panel">
+            <p>В комплекте корм, лупа, декоративный песок, инструкция</p>
+          </div>
+
+          <button class="accordion">Содержание формикария это дорого?</button>
+          <div class="panel">
+            <p>Специальный зерновой корм - это все, что нужно муравьям. Пробирки за 190 рублей хватит примерно на год.</p>
+          </div>
+
+          <button class="accordion">Могут ли укусить?</button>
+          <div class="panel">
+            <p>Укусить могут, это немного больно, но не опасно)). Охрана жилища заложена самой природой. Будьте аккуратны во время ухода за мурашами и все будет в порядке.
+            Наши муравьи абсолютно не опасны. Они не вызывают аллергию, не являются переносчиками болезней.</p>
+          </div>
+
+          <button class="accordion">Я куплю только ферму, а муравьев во дворе наловлю, ок?</button>
+          <div class="panel">
+            <p>Крайне не рекомендуем заселять ферму "местными" муравьями. Предлагаемый нами вид  Messor structor не приспособлен к жизни в квартире и доме вне фермы. Местные же виды с большой вероятностью заразят вашу квартиру или дом и избавиться от них затем будет крайне сложно.
+
+            Вы можете приобрести у нас ферму отдельно и купить других муравьев, пригодных для содержания в формикарии.</p>
+          </div>
+
+          <button class="accordion">Видел в интернете дешевые, гелевые фермы. Почему у вас так дорого?</button>
+          <div class="panel">
+            <p>Гелевые фермы не предназначены для длительного содержания муравьев и через пару недель вся колония погибнет с вероятностью 100%. Категорически не советуем вам их покупать.</p>
+          </div>
+        </div>
+
+
+
+        <p class="question__descr">Не нашли ответ? Спросите нас! </p>
+
+        <a href="#contacts" class="btn question__btn">Задать вопрос</a>
+      </div>
+
+    </section>
+    <!-- <section class="gifts">
+      <div class="container">
+        <h2 class="gifts__title">Что в комплекте?</h2>
+      </div>
+    </section> -->
+
+    <section class="feedback">
+      <div class="container">
+        <h2 class="feedback__title">Отзывы</h2>
+
+          <div id="owl-carousel--feedback" class="feedback__slider owl-carousel owl-theme">
+            <div class="feedback__card">
+               <p class="feedback__text">Заказывал муравьиную ферму на новый год для ребенка. Получился отличный подарок, ребенок в восторге. Как же интересно наблюдать за маленькими мурашами и  за ними совсем просто ухаживать.</p>
+               <div class="feedback__autor">
+                 <img src="../img/face2.jpg" alt="автор отзыва 1" class="feedback__face">
+                 <p class="feedback__name">Леонид Петров</p>
+               </div>
+            </div>
+            <div class="feedback__card">
+               <p class="feedback__text">Заказывал муравьиную ферму на новый год для ребенка. Получился отличный подарок, ребенок в восторге. Как же интересно наблюдать за маленькими мурашами и  за ними совсем просто ухаживать.</p>
+               <div class="feedback__autor">
+                 <img src="../img/face1.jpg" alt="" class="feedback__face">
+                 <p class="feedback__name"> Вероника Яковлева</p>
+               </div>
+            </div>
+            <div class="feedback__card">
+               <p class="feedback__text">Заказывал муравьиную ферму на новый год для ребенка. Получился отличный подарок, ребенок в восторге. Как же интересно наблюдать за маленькими мурашами и  за ними совсем просто ухаживать.</p>
+               <div class="feedback__autor">
+                 <img src="../img/face4.jpg" alt="" class="feedback__face">
+                 <p class="feedback__name">Юрий Прудников</p>
+               </div>
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+    <section class="delivery">
+      <div class="container">
+        <h2 class="delivery__title">Доставка и гарантии</h2>
+        <div class="delivery__content-wrapper">
+        <div class="delivery__map-wrapper">
+          <div id="ya-map" class="delivery__ya-map"></div>
+          <img src="../img/delivery-map.jpeg" alt="" class="delivery__map">
+        </div>
+        <div class="delivery__text-block">
+          <p class="delivery__text">
+            Доставка по городу Курску бесплатно!
+
+            Муравьишек доставляем по всей Росии почтой или курьерской службой. Зимой упаковываем так, чтобы они не замерзли и без проблем добрались к будущим хозяевам.
+Снимайте на видео распаковку, если вдруг муравьишки не смогли пережить путешествие, мы вернем деньги, либо отправим Вам новых обитателей муравьиной фермы.</p>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="video">
+      <div class="container">
+        <h2 class="video__title">Видео</h2>
+
+        <p class="video__descr">Ну а пока ваши муравьишики в пути, присмотрите пожалуйста за нашими</p>
+
+
+        <div  class="video__vid-wrapper">
+          <iframe class="video__item" width="1170" height="658" src="https://www.youtube.com/embed/dg1BdCX0v-c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!-- <div class="video__overlay"></div> -->
+
+        </div>
+      </div>
+
+    </section>
+    <section id="contacts" class="contacts">
+      <div class="container">
+        <h2 class="contacts__title">Контакты</h2>
+        <p class="contacts__subtitle">Остались вопросы?</p>
+        <img src="" alt="" class="contacts__img">
+
+        <form action="" class="contacts__form">
+          <div class="form__info-block">
+            <h3 class="info-block__title">Контактная информация</h3>
+            <div class="info-block__contacts">
+              <p class="info-block__email">farmantfarm46@antfarm.ru</p>
+              <p class="info-block__phone">+7 (908) 888-88-88</p>
+              <p class="info-block__adress">г. Курск, ул. Первомайская, 139в.</p>
+            </div>
+          </div>
+          <div class="form__fields">
+            <p class="fields__title">Оставьте ваше сообщение</p>
+            <div class="fields__wrapper">
+              <div class="fields__one-block">
+                <div class="fields__item">
+                  <label for="field-name">Имя</label>
+                  <input type="text" id="question-field-name" class="fields__name" placeholder="Ваше имя...">
+                </div>
+                <div class="fields__item">
+                  <label for="field-name">Email</label>
+                  <input type="text" id="question-field-email" class="fields__name" placeholder="example-mail@example.ru">
+                </div>
+              </div>
+              <div class="fields__two-block">
+                <div class="fields__item">
+                  <label for="field-name">Телефон</label>
+                  <input type="text" id="question-field-phone" class="fields__name" placeholder="+X (XXX) XXX-XX-XX">
+                </div>
+                <div class="fields__item">
+                  <label for="field-name">Сообщение</label>
+                  <!-- <textarea name="name" class="fields__name fields__name--textarea" rows="8" cols="80" placeholder="Ваше сообщение..."></textarea> -->
+                  <input type="text" id="question-field-msg" class="fields__name" placeholder="Ваше сообщение...">
+                </div>
+              </div>
+            </div>
+            <button class="btn form__btn" id="question-form-btn" type="button" name="button">Отправить</button>
+            <div id="question-error-block"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+
+  </main>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer__content-wrapper">
+        <ul class="main-footer__list">
+          <li class="footer__list-item">
+            <a class="footer__link" href="">Что это?</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__link" href="">Каталог</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__link" href="">Обитатели</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__link" href="">Вопрос-ответ</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__link" href="">Контакты</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__link" href="">Доставка</a>
+          </li>
+        </ul>
+        <div class="footer__social-wrapper">
+          <a class="social__link" href=""><img class="social__img social__img--vk" src="../img/vk.svg" alt="vk"></a>
+          <a class="social__link" href=""><img class="social__img social__img--inst" src="../img/inst.svg" alt="inst"></a>
+          <a class="social__link" href=""><img class="social__img social__img--youtube" src="../img/youtube.svg" alt="youtube"></a>
+        </div>
+        <p class="footer__created">сделал <a href="" class="footer__created-link">кто-то</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <svg class="inline-svg" width="360px" height="700px" viewBox="0 0 360 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+      <title>Mask</title>
+      <desc>Created with Sketch.</desc>
+      <defs>
+        <mask id="mask">
+        <clipPath id="myPath">
+            <path d="M1.50636068,9 L0,9 L0,692 L1.05489754,692 C1.02198397,694.111177 0.980307788,696.142519 0.928234082,698.103508 C1.75143862,698.26692 2.48002195,698.466917 3.13385451,698.713254 C4.73579162,698.515697 6.52791736,698.293749 8.31720446,698.07424 C9.6560946,697.913267 10.9930923,697.754733 12.1815347,697.432787 L12.0528499,698.815692 C18.6971513,699.166906 22.0136248,699.340074 30.2248535,699.010811 L28.5500581,699.9986 C33.1817663,700.086403 34.3985951,696.015736 38.6707428,695.93525 L39.9556989,697.996193 C48.0363503,697.964486 56.2154078,699.774213 64.1995456,697.90595 C64.0680221,698.205945 63.8305229,698.803497 62.5219115,698.886422 C66.3256842,698.94008 77.2355098,700.281522 75.8540402,697.452299 C75.9486614,699.293733 84.1911151,697.632784 88.5550453,696.820602 L87.875665,698.179117 C91.5592688,696.442559 91.6765991,695.966957 96.8202081,695.486477 C98.0389293,695.664523 97.8884816,696.574264 96.2695127,696.227928 C100.330655,696.940112 99.4345922,694.940144 104.35868,695.664523 L102.523975,696.532801 C106.703394,696.637678 106.370327,696.171832 108.671515,695.157214 C111.299146,694.61332 116.59888,695.501111 117.216756,696.730359 C117.779753,695.981591 120.06864,694.979168 122.53163,695.332821 C122.86375,695.798667 121.966741,696.086467 121.515398,696.227928 C128.503174,697.152304 131.906699,694.647466 136.712511,695.981591 C136.811863,696.432803 137.125059,696.65719 137.523415,696.793773 C131.972934,696.759627 127.502082,696.686457 127.920308,696.586459 C127.920308,697.840098 132.404407,698.059606 128.837187,699.791286 C132.437524,698.84496 138.591688,696.793773 142.962242,697.381568 C143.17514,697.503518 143.381414,697.623028 143.540377,697.815708 L143.088088,697.957169 C144.09675,698.081557 145.000383,697.964486 145.851027,697.754733 C147.245744,697.959608 148.131399,698.113264 149.471235,698.130337 C149.988813,699.166906 154.612952,698.688865 156.848851,698.740083 C156.664339,697.369373 159.59192,697.588882 156.848851,696.457193 C157.204626,696.554752 156.42684,696.620605 154.940341,696.679141 C154.603489,696.718164 154.207973,696.740115 153.986559,696.820602 C154.030085,696.786456 154.083073,696.744993 154.138899,696.698652 C152.671324,696.723042 150.757137,696.754749 148.581796,696.791334 C150.347427,696.093784 152.193487,695.508427 154.665939,696.269391 C155.813695,695.388917 157.075942,694.481615 157.787493,694.057231 C160.847543,695.969396 166.745283,697.003526 167.566595,698.181556 C174.393516,697.413275 183.650309,697.674247 187.942327,695.098678 C189.8849,694.766976 190.174441,695.837691 190.900186,696.242562 C189.778925,696.501095 188.446658,696.462071 187.840136,696.832797 C191.720552,696.171832 199.339452,696.574264 200.265793,694.774293 C205.15771,695.586475 197.516101,696.432803 204.237992,696.137686 L203.330575,696.688896 C216.553889,699.56446 224.82946,692.093848 239.489124,695.786472 C238.473839,695.559646 237.965723,695.45477 237.758502,695.154775 C254.472393,696.781578 272.201569,693.625531 288.694046,696.208416 C293.382527,696.72792 293.890643,695.579158 296.751989,694.706001 L297.767274,696.179149 L302.659191,694.479176 C309.595872,693.235293 314.671354,698.093752 323.454095,695.740131 L322.321479,694.747464 C325.475204,694.935266 332.311586,694.162107 331.785492,695.303553 C332.108151,695.123068 332.819702,694.271862 334.052616,694.788927 L334.148184,695.559646 L341.896715,694.240155 C347.902323,694.796244 340.95618,697.298643 349.721889,697.44986 C352.979697,697.152304 358.999499,695.205993 357.776046,694.688928 C356.460812,694.652344 354.416047,694.208448 354.317641,693.437729 L357.298209,693.035296 C357.380236,692.69056 357.502609,692.344531 357.625594,692 L360,692 L360,37.8545685 C360,37.8545685 360,37.8545685 360,37.8545685 L360,9 L359.489148,9 C359.464111,7.09147026 359.439193,5.19961093 359.414886,3.32189828 C358.457319,3.35848306 357.510161,3.39262886 356.571518,3.42921364 C356.108821,3.42189668 355.648962,3.41701871 355.190995,3.41214074 L354.150162,3.33653219 C352.924817,3.19507103 351.719343,2.88288088 350.524277,2.32191421 C348.084942,3.45604248 355.53447,3.11946248 353.352505,4.44870959 C349.10969,4.22920089 344.688987,1.89996972 343.359559,1.89509175 C337.547924,0.995106092 337.936817,4.26578567 331.855512,3.65116132 C332.633298,4.22920089 333.367559,5.77551771 328.822902,6.31941148 C324.575356,6.10721974 323.603596,3.89262089 326.284215,3.42677465 C327.302339,3.37799494 327.793423,3.56335784 327.749898,3.75847668 C329.121905,3.54872393 330.922547,3.29994741 329.241128,2.67312813 L328.690432,3.2511677 C326.584164,2.6609332 320.742251,2.72190784 322.114258,1.77314247 C318.905653,2.3243532 320.742251,2.72190784 323.119135,3.02190306 C317.672739,2.18533102 314.610796,2.9975132 309.005436,2.43410755 C309.896767,2.75361465 310.717133,3.43409161 309.830533,3.42677465 C301.607949,2.70971291 306.210325,4.52675712 300.639028,4.78041162 C297.473949,3.89749886 301.773536,2.67312813 296.165337,3.41214074 C292.740996,2.81458929 295.440539,1.87557986 296.801192,1.40485566 C291.691646,2.51947204 287.254858,0.670721018 284.33674,0.465846234 L287.027767,0 C285.41826,0.275605364 284.100187,0.268288407 282.758458,0.265849422 L284.295106,1.42436754 C282.714932,1.22193174 281.376988,1.21705377 281.406321,0.734134641 C279.77789,1.49265914 282.652482,2.6609332 279.421168,3.69750205 C277.3149,3.10970654 273.00585,4.3291993 272.278212,2.79263842 C278.904536,3.31458132 271.546791,1.24876059 277.154043,1.00242305 C276.072523,1.18534696 274.753503,1.17803001 273.168598,0.975594208 C272.930153,0.802426236 273.39285,0.656087105 273.824323,0.568283626 C267.484702,-0.804865221 270.910936,2.30484132 264.340439,2.27069552 C265.174052,1.40485566 262.817038,0.626819278 261.744979,0.812182178 C264.392481,0.829255076 263.011011,2.2560616 260.582085,2.91946567 C256.369548,2.24630566 256.003364,3.42189668 253.796798,3.34384915 L256.314668,3.66091726 C255.462131,4.52675712 253.354916,4.4121248 250.41882,4.68529118 C250.167128,4.01213118 253.085246,4.22188393 252.037789,3.9243277 C248.776196,5.44625466 244.668689,2.34874305 240.12214,3.37311697 C238.015872,2.78776045 239.918704,1.74631363 238.06886,1.34875899 C232.972561,2.47313132 232.549605,0.16341203 227.193098,1.09022653 C228.73637,2.25362262 229.00604,1.9707003 225.235385,3.10482857 L234.040835,2.28532943 L228.38911,3.97798538 C231.04702,3.99505828 233.997309,3.24628973 235.589784,3.44384755 C232.896864,4.39261292 233.173158,4.10481263 234.445814,5.07065089 C230.80952,3.32433726 227.236624,6.08770785 223.032603,4.90723886 L223.161288,2.02679697 C216.841537,0.741451598 211.933535,3.50482219 203.727037,2.78044349 L206.365077,3.28043552 C205.263686,4.42675872 201.298111,3.44140857 198.641147,3.90481582 C198.888109,2.94141654 197.227506,2.59264161 196.092998,1.99265117 C196.230199,2.70727393 190.086444,1.92679856 189.341775,3.85115813 L185.678041,2.58288566 C179.051718,2.06338175 178.115914,5.32674437 171.74696,4.99748133 C173.665879,3.95115654 170.77047,3.2682406 175.037886,2.51947204 C172.910801,2.5097161 170.998507,2.33410914 170.965389,3.00239117 C169.723013,2.39996175 165.068595,4.29993147 163.112775,3.3853119 C162.216712,3.80725639 161.923386,4.8169964 159.536093,4.73650988 C159.275885,4.54139104 159.545555,4.2609077 159.545555,4.2609077 C159.536093,4.73650988 155.808017,4.90723886 157.894415,5.97307554 C151.343789,2.96824538 139.585211,6.19258423 133.881444,3.61213755 C129.240274,3.93408364 123.649106,4.2438348 119.435624,4.31456538 C119.70624,4.02676509 119.449817,3.83408524 120.246528,3.93408364 C114.434893,3.03897596 116.673631,6.69989322 110.059608,5.69990916 C106.680685,4.1438364 113.571947,4.85845915 111.464733,4.26822466 C110.547853,1.09998247 103.483434,4.70236408 99.0324521,2.85117407 L100.110188,2.66337219 C96.7085551,1.58777957 91.810015,3.86579205 86.2519651,3.63896639 C86.2519651,3.63896639 86.5225817,3.35848306 86.2850825,3.16092523 C82.4832022,4.77553365 75.2882053,5.30967147 69.9402145,5.75844481 C71.6046016,4.51944017 72.3700872,5.10235771 71.3548016,3.84384118 C68.9571001,4.02188712 72.056891,5.86576017 67.2718963,6.21941307 C65.7172698,5.5413751 62.265488,4.94626263 61.8075214,3.60238161 L66.3200069,3.52921205 C64.0084107,1.79021537 60.4790396,3.59018668 58.1012085,3.28775248 L58.4049426,2.526789 C51.4890783,2.77312653 51.3925646,4.69016915 43.9591223,4.55358596 L44.7274465,5.12918655 C40.6663041,7.02671728 41.3220291,4.06091089 37.2703489,5.4730835 L36.044058,3.54628494 C33.3634391,4.01213118 26.6547952,5.4072309 21.8480377,5.77063974 C24.5712361,4.34139422 30.1955209,3.61213755 33.6766353,2.76337059 C31.0196717,2.75117567 24.6469331,2.90727074 23.263571,3.85603611 C24.3337369,3.67067321 25.6830354,3.199949 26.7399543,3.49506625 C23.4802536,5.00967626 19.1920203,5.75356684 13.8979635,5.71942104 C14.2045362,4.49992828 12.8344211,3.97798538 10.7186908,3.72433089 C9.66082566,3.59750364 8.41655674,3.53896799 7.1013219,3.49506625 C5.29405677,3.44872552 3.38933178,3.39994581 1.54800302,3.3511661 C1.53401214,5.26595628 1.52002126,7.15656329 1.50636068,9 Z" id="path-1"></path>
+             </clipPath>
+             </mask>
+
+      </defs>
+      <g id="01.-Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="d-01-homepage-singaporeZoo" transform="translate(0.000000, -1058.000000)">
+              <g id="explore-our-attractions" transform="translate(0.000000, 878.000000)">
+                  <g id="01" transform="translate(0.000000, 180.000000)">
+                      <g id="img">
+                          <mask id="mask-2" >
+                              <use xlink:href="#path-1"></use>
+                          </mask>
+                          <use id="Mask"  xlink:href="#path-1"></use>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </g>
+  </svg>
+
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+  <!-- yandex карта -->
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3e7b947aebb922c26831b68707022c7a77bb743d5f1be7ed1cf8bb21bab1ead8&amp;height=415&amp;lang=ru_RU&amp;scroll=true&id=ya-map"></script>
+
+</body>
+</html>
