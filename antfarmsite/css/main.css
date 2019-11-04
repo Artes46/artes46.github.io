@@ -547,7 +547,22 @@ button.owl-next {
     background-color: #f47736;
     top: 14px;
     left: -88px;
-    transition: all 0.2 ease-in-out; }
+    transition: all 0.2 ease-in-out;
+
+
+   }
+
+   @media (max-width: 425px) {
+     .main-nav__list-item::after {
+       display: none;
+     }
+     .main-nav__list-item:hover::after {
+       display: none;
+     }
+     .main-nav {
+       display: none;
+     }
+   }
 
 .main-nav__link {
   position: relative;
