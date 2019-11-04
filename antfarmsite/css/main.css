@@ -559,9 +559,9 @@ button.owl-next {
      .main-nav__list-item:hover::after {
        display: none;
      }
-     .main-nav {
+     /* .main-nav {
        display: none;
-     }
+     } */
    }
 
 .main-nav__link {
