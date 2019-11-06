@@ -672,7 +672,7 @@ button.owl-next {
   @media (max-width: 767px) {
     .descript__bg-text {
       bottom: -200px;
-      left: 10px; } }
+      left: -15px; } }
 
 .descript__bg-text-item {
   font-family: 'Oswald', sans-serif;
