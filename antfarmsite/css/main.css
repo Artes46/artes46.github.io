@@ -675,6 +675,7 @@ button.owl-next {
       left: -2px; } }
 
 .descript__bg-text-item {
+  font-family: 'Oswald', sans-serif;
   margin: 0;
   font-size: 298px;
   line-height: 240px;
