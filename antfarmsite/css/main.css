@@ -689,7 +689,8 @@ button.owl-next {
       font-size: 67px; } }
 
 .descript-text {
-  font-family: "Neucha", "PT Sans", sans-serif;
+  /* font-family: "Neucha", "PT Sans", sans-serif; */
+  font-family: 'Bad Script', cursive;
   max-width: 350px;
   font-size: 70px;
   line-height: 81px;
