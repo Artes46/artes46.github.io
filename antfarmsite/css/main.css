@@ -985,17 +985,17 @@ button.owl-next {
   margin-bottom: 15px; }
 
 .interesting__card-img--1 {
-  background-image: url(../img/interesting-../img-1.jpg);
+  background-image: url(../img/interesting-img-1.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
 
 .interesting__card-img--2 {
-  background-image: url(../img/interesting-../img-2.jpg);
+  background-image: url(../img/interesting-img-2.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
 
 .interesting__card-img--3 {
-  background-image: url(../img/interesting-../img-3.jpg);
+  background-image: url(../img/interesting-img-3.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -1424,7 +1424,7 @@ button.owl-next {
   background-color: #153726;
   margin-bottom: 30px;
   min-height: 330px;
-  -webkit-mask-box-image: url(../../img/mask-block.svg) 30 repeat;
+  -webkit-mask-box-image: url(../img/mask-block.svg) 30 repeat;
   mask-border: url(../img/mask-block.svg) 30 repeat;
   -webkit-mask-box-image-repeat: stretch;
           mask-border-repeat: stretch;
