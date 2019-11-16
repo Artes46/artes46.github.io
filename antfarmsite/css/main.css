@@ -690,8 +690,8 @@ button.owl-next {
 
 .descript-text {
   /*font-family: "Neucha", , sans-serif;*/
-  /*font-family: 'Neucha', "PT Sans", cursive;*/
-  font-family: 'Pangolin', "PT Sans", cursive;
+  font-family: 'Neucha', "PT Sans", cursive;
+  /*font-family: 'Pangolin', "PT Sans", cursive;*/
   max-width: 350px;
   font-size: 70px;
   line-height: 81px;
