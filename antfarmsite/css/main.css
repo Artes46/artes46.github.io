@@ -834,7 +834,8 @@ button.owl-next {
       width: 228px; } }
   @media (max-width: 320px) {
     .descript__anthill {
-      right: -4.2vw;
+      /*right: -4.6vw;*/
+      right: -4vw;
       top: 399px;
       width: 228px; } }
 
