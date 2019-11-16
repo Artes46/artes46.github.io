@@ -869,14 +869,14 @@ button.owl-next {
   @media (max-width: 1024px) {
     .interesting::after {
       position: absolute;
-      content: url(img/branch-tablet.png);
+      content: url(..img/branch-tablet.png);
       top: -26px;
       /* right: -6px; */
       max-width: auto; } }
   @media (max-width: 767px) {
     .interesting::after {
       position: absolute;
-      content: url(img/branch-mobile.png);
+      content: url(..img/branch-mobile.png);
       top: -23px;
       /* right: -6px; */
       max-width: auto; } }
@@ -988,17 +988,17 @@ button.owl-next {
   margin-bottom: 15px; }
 
 .interesting__card-img--1 {
-  background-image: url(img/interesting-img-1.jpg);
+  background-image: url(..img/interesting-img-1.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
 
 .interesting__card-img--2 {
-  background-image: url(img/interesting-img-2.jpg);
+  background-image: url(..img/interesting-img-2.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
 
 .interesting__card-img--3 {
-  background-image: url(img/interesting-img-3.jpg);
+  background-image: url(..img/interesting-img-3.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -1427,14 +1427,14 @@ button.owl-next {
   background-color: #153726;
   margin-bottom: 30px;
   min-height: 330px;
-  -webkit-mask-box-image: url(img/mask-block.svg) 30 repeat;
-  mask-border: url(img/mask-block.svg) 30 repeat;
+  -webkit-mask-box-image: url(..img/mask-block.svg) 30 repeat;
+  mask-border: url(..img/mask-block.svg) 30 repeat;
   -webkit-mask-box-image-repeat: stretch;
           mask-border-repeat: stretch;
   -webkit-mask-box-image-outset: 0px 0px 0px 0px;
           mask-border-outset: 0px 0px 0px 0px;
-  mask-box-image: url(img/mask-block.svg) 30 repeat;
-  mask-border: url(img/mask-block.svg) 30 repeat;
+  mask-box-image: url(..img/mask-block.svg) 30 repeat;
+  mask-border: url(..img/mask-block.svg) 30 repeat;
   mask-border-repeat: stretch; }
   @media (max-width: 1024px) {
     .inhabitants__card {
@@ -1520,7 +1520,7 @@ button.owl-next {
   background-color: #FFFFFF;
   color: #000000;
   border-top: 1px solid transparent;
-  border-image: url(img/top-border-2.png) round;
+  border-image: url(..img/top-border-2.png) round;
   border-image-width: 60px;
   border-image-slice: 100;
   border-image-outset: 60px 0px 0px 0px;
@@ -1659,7 +1659,7 @@ button.owl-next {
         z-index: -1; } }
 
 .inhabitants-2__title::before {
-  content: url(img/title-leafs.png);
+  content: url(..img/title-leafs.png);
   position: absolute;
   left: -68px;
   top: -54px;
@@ -1675,12 +1675,12 @@ button.owl-next {
   padding: 150px 0px;
   background-color: #0f200c;
   color: #ffffff;
-  background-image: url(img/questions-background.png);
+  background-image: url(..img/questions-background.png);
   background-repeat: no-repeat;
   background-position: 0px;
   background-size: cover;
   border-top: 62px solid transparent;
-  border-image: url(img/top-border-3.png) round;
+  border-image: url(..img/top-border-3.png) round;
   border-image-width: 60px 0 0 0;
   border-image-slice: 100;
   border-image-outset: 0px 0px 0px 0px; }
@@ -1765,8 +1765,8 @@ button.owl-next {
   border: none;
   outline: none;
   transition: 0.4s;
-  -webkit-mask-box-image: url(img/mask-block.svg) 30 repeat;
-  mask-border: url(img/mask-block.svg) 30 repeat;
+  -webkit-mask-box-image: url(..img/mask-block.svg) 30 repeat;
+  mask-border: url(..img/mask-block.svg) 30 repeat;
   -webkit-mask-box-image-repeat: stretch;
           mask-border-repeat: stretch;
   -webkit-mask-box-image-outset: 0px 0px 0px 0px;
@@ -2037,7 +2037,7 @@ button.owl-next {
   padding: 150px 0px;
   background-color: #ffffff;
   border-top: 1px solid transparent;
-  border-image: url(img/top-border-2.png) round;
+  border-image: url(..img/top-border-2.png) round;
   border-image-width: 44px;
   border-image-slice: 100;
   border-image-outset: 44px 0px 0px 0px;
@@ -2049,7 +2049,7 @@ button.owl-next {
     .contacts {
       background-color: #ffffff;
       border-top: 1px solid transparent;
-      border-image: url(img/top-border-2.png) round;
+      border-image: url(..img/top-border-2.png) round;
       border-image-width: 18px;
       border-image-slice: 100;
       border-image-outset: 18px 0px 0px 0px;
@@ -2672,14 +2672,14 @@ button.owl-next {
 .kit {
   background-color: #0f200c;
   padding: 150px 0px;
-  background-image: url(img/kit-bg.jpg);
+  background-image: url(..img/kit-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-repeat: no-repeat;
   background-position: 0px;
   background-size: cover;
   border-top: 1px solid transparent;
-  border-image: url(img/top-border-3.png) round;
+  border-image: url(..img/top-border-3.png) round;
   border-image-width: 60px 0 0 0;
   border-image-slice: 100;
   border-image-outset: 0px 0px 0px 0px; }
@@ -2912,7 +2912,7 @@ button.owl-next {
   background-color: #ffffff;
   width: 100%;
   border-top: 1px solid transparent;
-  border-image: url(img/top-border-1.png) round;
+  border-image: url(..img/top-border-1.png) round;
   border-image-width: 60px;
   border-image-slice: 190;
   border-image-outset: 55px 0px 0px 0px;
@@ -2997,7 +2997,7 @@ button.owl-next {
   content: "";
   width: 95px;
   height: 82px;
-  background-image: url(img/quote.png);
+  background-image: url(..img/quote.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1; }
