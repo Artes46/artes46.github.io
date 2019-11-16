@@ -675,7 +675,6 @@ button.owl-next {
       left: -15px; } }
 
 .descript__bg-text-item {
-  font-family: 'Oswald', sans-serif;
   margin: 0;
   font-size: 298px;
   line-height: 240px;
@@ -690,8 +689,8 @@ button.owl-next {
       font-size: 55px; } }
 
 .descript-text {
-  /* font-family: "Neucha", "PT Sans", sans-serif; */
-  font-family: 'Bad Script', cursive;
+  /*font-family: "Neucha", , sans-serif;*/
+  font-family: 'Neucha', "PT Sans", cursive;
   max-width: 350px;
   font-size: 70px;
   line-height: 81px;
