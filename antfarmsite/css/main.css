@@ -844,7 +844,7 @@ button.owl-next {
   padding: 150px 0px;
   background-color: #ffffff;
   border-top: 1px solid transparent;
-  border-image: url("img/top-border-1.png") round;
+  border-image: url("../img/top-border-1.png") round;
   border-image-width: 60px;
   border-image-slice: 190;
   border-image-outset: 55px 0px 0px 0px;
@@ -1024,7 +1024,7 @@ button.owl-next {
   background-color: #0f200c;
   color: #ffffff;
   border-top: 62px solid transparent;
-  border-image: url("img/bottom-paper.png") round;
+  border-image: url("../img/bottom-paper.png") round;
   border-image-width: 60px 0 0 0;
   border-image-slice: 100;
   border-image-outset: 0px 0px 0px 0px; }
@@ -1038,7 +1038,7 @@ button.owl-next {
   @media (max-width: 767px) {
     .advantages {
       border-top: 62px solid transparent;
-      border-image: url("img/bottom-paper.png") round;
+      border-image: url("../img/bottom-paper.png") round;
       border-image-width: 18px 0 0 0;
       border-image-slice: 100;
       border-image-outset: -18px 0px 0px 0px; } }
@@ -1133,7 +1133,7 @@ button.owl-next {
   padding: 150px 0px;
   padding-bottom: 0;
   border-top: 1px solid transparent;
-  border-image: url("img/top-border-2.png") round;
+  border-image: url("../img/top-border-2.png") round;
   border-image-width: 60px;
   border-image-slice: 100;
   border-image-outset: 60px 0px 0px 0px;
@@ -1144,14 +1144,14 @@ button.owl-next {
   @media (max-width: 1024px) {
     .catalog {
       border-top: 20px solid transparent;
-      border-image: url("img/top-border-2.png") round;
+      border-image: url("../img/top-border-2.png") round;
       border-image-width: 20px;
       border-image-slice: 100;
       border-image-outset: 20px 0px 0px 0px; } }
   @media (max-width: 767px) {
     .catalog {
       border-top: 1px solid transparent;
-      border-image: url("img/top-border-2.png") round;
+      border-image: url("../img/top-border-2.png") round;
       border-image-width: 18px;
       border-image-slice: 100;
       border-image-outset: 18px 0px 0px 0px; } }
@@ -1334,7 +1334,7 @@ button.owl-next {
   background-color: #0f200c;
   color: #ffffff;
   border-top: 62px solid transparent;
-  border-image: url("img/top-border-3.png") round;
+  border-image: url("../img/top-border-3.png") round;
   border-image-width: 60px 0 0 0;
   border-image-slice: 100;
   border-image-outset: 0px 0px 0px 0px; }
@@ -1831,7 +1831,7 @@ button.owl-next {
   background-color: #ffffff;
   border-radius: 0px;
   border-top: 1px solid transparent;
-  border-image: url("img/top-border-2.png") round;
+  border-image: url("../img/top-border-2.png") round;
   border-image-width: 60px;
   border-image-slice: 100;
   border-image-outset: 60px 0px 0px 0px;
@@ -1842,7 +1842,7 @@ button.owl-next {
   @media (max-width: 767px) {
     .video {
       border-top: 1px solid transparent;
-      border-image: url("img/top-border-2.png") round;
+      border-image: url("../img/top-border-2.png") round;
       border-image-width: 18px;
       border-image-slice: 100;
       border-image-outset: 18px 0px 0px 0px;
@@ -1929,7 +1929,7 @@ button.owl-next {
   color: #ffffff;
   padding: 150px 0px;
   border-top: 62px solid transparent;
-  border-image: url("img/top-border-3.png") round;
+  border-image: url("../img/top-border-3.png") round;
   border-image-width: 60px 0 0 0;
   border-image-slice: 100;
   border-image-outset: 0px 0px 0px 0px; }
@@ -1942,7 +1942,7 @@ button.owl-next {
   @media (max-width: 767px) {
     .delivery {
       border-top: 1px solid transparent;
-      border-image: url("img/top-border-3.png") round;
+      border-image: url("../img/top-border-3.png") round;
       border-image-width: 18px 0 0 0;
       border-image-slice: 100;
       border-image-outset: -18px 0px 0px 0px; } }
