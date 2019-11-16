@@ -138,7 +138,7 @@ html {
 
 .fog-animation__wrapper::before,
 .fog-animation__wrapper div::before {
-  background-image: url("../img/fog1.png");
+  background-image: url("img/fog1.png");
   background-size: contain;
   background-repeat: repeat-x;
   -webkit-animation: fogmove 17s linear 0s infinite;
@@ -147,7 +147,7 @@ html {
 
 .fog-animation__wrapper::after,
 .fog-animation__wrapper div::after {
-  background-image: url("../img/fog2.png");
+  background-image: url("img/fog2.png");
   -webkit-animation: fogmove 65s linear 0s infinite;
           animation: fogmove 65s linear 0s infinite;
   background-repeat: repeat-x; }
@@ -198,7 +198,7 @@ html {
 
 .fog-animation-2__wrapper::before,
 .fog-animation-2__wrapper div::before {
-  background-image: url("../img/fog1.png");
+  background-image: url("img/fog1.png");
   background-size: contain;
   background-repeat: repeat-x;
   -webkit-animation: fogmove 17s linear 0s infinite;
@@ -207,7 +207,7 @@ html {
 
 /*.fog-animation__wrapper::after,
 .fog-animation__wrapper div::after {
-    background-image: url("../img/fog2.png");
+    background-image: url("img/fog2.png");
     animation: fogmove 20s linear 0s infinite;
 		background-repeat: repeat-x;
 }*/
@@ -274,16 +274,16 @@ body {
   color: #383838;
   font-style: normal;
   background-color: #0f200c;
-  background-image: url("../img/main-screen-bg-clear.jpg");
+  background-image: url("img/main-screen-bg-clear.jpg");
   background-repeat: no-repeat;
   /*background-size: contain;*/
   background-position: top left;
   /*@media (min-width: 1365px) {
 
-		background-image: url("../img/main-screen-bg-5.jpg");
+		background-image: url("img/main-screen-bg-5.jpg");
 	}*/
   /*@media (min-width: 1024px) and (max-width: 1366px) {
-		background-image: url("../img/main-screen-bg-1366.jpg");
+		background-image: url("img/main-screen-bg-1366.jpg");
 	}*/
   /*@media (max-width: 1440px) {
 		background-size: contain;
@@ -292,12 +292,12 @@ body {
     body {
       font-size: 14px;
       line-height: 22px;
-      /*background-image: url("../img/main-screen-bg-tablet.jpg");*/ } }
+      /*background-image: url("img/main-screen-bg-tablet.jpg");*/ } }
   @media (max-width: 1024px) {
     body {
       font-size: 14px;
       line-height: 22px;
-      background-image: url("../img/main-screen-bg-clear-tablet.jpg"); } }
+      background-image: url("img/main-screen-bg-clear-tablet.jpg"); } }
 
 h3 {
   font-family: "Bebas Neue", "Arial", sans-serif;
@@ -366,7 +366,7 @@ button.owl-next {
   padding-left: 5px;
   padding-right: 5px;
   background: none;
-  background-image: url("../img/arrow-left.svg");
+  background-image: url("img/arrow-left.svg");
   background-repeat: no-repeat;
   color: transparent; }
 
@@ -390,7 +390,7 @@ button.owl-next {
   padding-left: 5px;
   padding-right: 5px;
   background: none;
-  background-image: url("../img/arrow-left.svg");
+  background-image: url("img/arrow-left.svg");
   background-repeat: no-repeat;
   color: transparent; }
 
@@ -843,7 +843,7 @@ button.owl-next {
   padding: 150px 0px;
   background-color: #ffffff;
   border-top: 1px solid transparent;
-  border-image: url("../img/top-border-1.png") round;
+  border-image: url("img/top-border-1.png") round;
   border-image-width: 60px;
   border-image-slice: 190;
   border-image-outset: 55px 0px 0px 0px;
@@ -863,7 +863,7 @@ button.owl-next {
 
 .interesting::after {
   position: absolute;
-  content: url("../img/branch.png");
+  content: url("img/branch.png");
   top: 30px;
   right: 0; }
   @media (max-width: 1024px) {
@@ -1023,7 +1023,7 @@ button.owl-next {
   background-color: #0f200c;
   color: #ffffff;
   border-top: 62px solid transparent;
-  border-image: url("../img/bottom-paper.png") round;
+  border-image: url("img/bottom-paper.png") round;
   border-image-width: 60px 0 0 0;
   border-image-slice: 100;
   border-image-outset: 0px 0px 0px 0px; }
@@ -1037,7 +1037,7 @@ button.owl-next {
   @media (max-width: 767px) {
     .advantages {
       border-top: 62px solid transparent;
-      border-image: url("../img/bottom-paper.png") round;
+      border-image: url("img/bottom-paper.png") round;
       border-image-width: 18px 0 0 0;
       border-image-slice: 100;
       border-image-outset: -18px 0px 0px 0px; } }
@@ -1052,7 +1052,7 @@ button.owl-next {
   min-height: 365px;
   padding-right: 80px;
   padding-left: 80px;
-  background-image: url("../img/advantages-bg.jpg");
+  background-image: url("img/advantages-bg.jpg");
   background-repeat: repeat;
   background-size: cover; }
   @media (max-width: 1024px) {
@@ -1132,7 +1132,7 @@ button.owl-next {
   padding: 150px 0px;
   padding-bottom: 0;
   border-top: 1px solid transparent;
-  border-image: url("../img/top-border-2.png") round;
+  border-image: url("img/top-border-2.png") round;
   border-image-width: 60px;
   border-image-slice: 100;
   border-image-outset: 60px 0px 0px 0px;
@@ -1143,14 +1143,14 @@ button.owl-next {
   @media (max-width: 1024px) {
     .catalog {
       border-top: 20px solid transparent;
-      border-image: url("../img/top-border-2.png") round;
+      border-image: url("img/top-border-2.png") round;
       border-image-width: 20px;
       border-image-slice: 100;
       border-image-outset: 20px 0px 0px 0px; } }
   @media (max-width: 767px) {
     .catalog {
       border-top: 1px solid transparent;
-      border-image: url("../img/top-border-2.png") round;
+      border-image: url("img/top-border-2.png") round;
       border-image-width: 18px;
       border-image-slice: 100;
       border-image-outset: 18px 0px 0px 0px; } }
@@ -1333,7 +1333,7 @@ button.owl-next {
   background-color: #0f200c;
   color: #ffffff;
   border-top: 62px solid transparent;
-  border-image: url("../img/top-border-3.png") round;
+  border-image: url("img/top-border-3.png") round;
   border-image-width: 60px 0 0 0;
   border-image-slice: 100;
   border-image-outset: 0px 0px 0px 0px; }
@@ -1442,43 +1442,43 @@ button.owl-next {
 
 .inhabitants--xl {
   width: 670px;
-  background-image: url("../img/ant-matka-3.3.jpg"); }
+  background-image: url("img/ant-matka-3.3.jpg"); }
   @media (max-width: 1024px) {
     .inhabitants--xl {
       width: 100%;
-      background-image: url("../img/ant-matka-mobile.jpg"); } }
+      background-image: url("img/ant-matka-mobile.jpg"); } }
 
 .inhabitants--l {
   width: 470px;
-  background-image: url("../img/ant-soldier.jpg"); }
+  background-image: url("img/ant-soldier.jpg"); }
   @media (max-width: 1024px) {
     .inhabitants--l {
-      background-image: url("../img/ant-soldier-mobile.jpg"); } }
+      background-image: url("img/ant-soldier-mobile.jpg"); } }
 
 .inhabitants--m {
   width: 470px;
-  background-image: url("../img/ant-rab.jpg");
+  background-image: url("img/ant-rab.jpg");
   min-height: 250px; }
   @media (max-width: 1024px) {
     .inhabitants--m {
       min-height: 328px;
-      background-image: url("../img/ant-rab-mobile.jpg"); } }
+      background-image: url("img/ant-rab-mobile.jpg"); } }
 
 .inhabitants--xs {
   width: 370px;
   min-height: 250px;
-  background-image: url("../img/ant-kukolka.jpg"); }
+  background-image: url("img/ant-kukolka.jpg"); }
   @media (max-width: 1024px) {
     .inhabitants--xs {
-      background-image: url("../img/ant-kukolka-mobile.jpg"); } }
+      background-image: url("img/ant-kukolka-mobile.jpg"); } }
 
 .inhabitants--s {
   width: 270px;
   min-height: 250px;
-  background-image: url("../img/ant-lichinus.jpg"); }
+  background-image: url("img/ant-lichinus.jpg"); }
   @media (max-width: 1024px) {
     .inhabitants--s {
-      background-image: url("../img/ant-lichinus-mobile.jpg"); } }
+      background-image: url("img/ant-lichinus-mobile.jpg"); } }
 
 .panel {
   color: #000000; }
@@ -1801,7 +1801,7 @@ button.owl-next {
   top: 26px;
   width: 22px;
   height: 22px;
-  background-image: url("../img/acordeon-icon.png");
+  background-image: url("img/acordeon-icon.png");
   background-size: cover;
   background-repeat: no-repeat;
   font-size: 13px;
@@ -1830,7 +1830,7 @@ button.owl-next {
   background-color: #ffffff;
   border-radius: 0px;
   border-top: 1px solid transparent;
-  border-image: url("../img/top-border-2.png") round;
+  border-image: url("img/top-border-2.png") round;
   border-image-width: 60px;
   border-image-slice: 100;
   border-image-outset: 60px 0px 0px 0px;
@@ -1841,7 +1841,7 @@ button.owl-next {
   @media (max-width: 767px) {
     .video {
       border-top: 1px solid transparent;
-      border-image: url("../img/top-border-2.png") round;
+      border-image: url("img/top-border-2.png") round;
       border-image-width: 18px;
       border-image-slice: 100;
       border-image-outset: 18px 0px 0px 0px;
@@ -1928,7 +1928,7 @@ button.owl-next {
   color: #ffffff;
   padding: 150px 0px;
   border-top: 62px solid transparent;
-  border-image: url("../img/top-border-3.png") round;
+  border-image: url("img/top-border-3.png") round;
   border-image-width: 60px 0 0 0;
   border-image-slice: 100;
   border-image-outset: 0px 0px 0px 0px; }
@@ -1941,7 +1941,7 @@ button.owl-next {
   @media (max-width: 767px) {
     .delivery {
       border-top: 1px solid transparent;
-      border-image: url("../img/top-border-3.png") round;
+      border-image: url("img/top-border-3.png") round;
       border-image-width: 18px 0 0 0;
       border-image-slice: 100;
       border-image-outset: -18px 0px 0px 0px; } }
@@ -2111,7 +2111,7 @@ button.owl-next {
   padding-right: 0;
   background-color: #0f200c;
   color: #ffffff;
-  background-image: url("../img/form-img-bg.png");
+  background-image: url("img/form-img-bg.png");
   background-repeat: no-repeat;
   background-size: cover; }
   @media (max-width: 1024px) {
@@ -2733,7 +2733,7 @@ button.owl-next {
 .kit__card--1 {
   width: 470px;
   min-height: 600px;
-  background-image: url("../img/kit-img-1.png");
+  background-image: url("img/kit-img-1.png");
   background-repeat: no-repeat;
   background-position: right bottom; }
   @media (max-width: 1024px) {
@@ -2748,7 +2748,7 @@ button.owl-next {
 .kit__card--2 {
   width: 370px;
   min-height: 374px;
-  background-image: url("../img/kit-img-2.png");
+  background-image: url("img/kit-img-2.png");
   background-repeat: no-repeat;
   background-position: left bottom; }
   @media (max-width: 1024px) {
@@ -2764,7 +2764,7 @@ button.owl-next {
 .kit__card--3 {
   width: 270px;
   min-height: 374px;
-  background-image: url("../img/kit-img-3.png");
+  background-image: url("img/kit-img-3.png");
   background-repeat: no-repeat;
   background-position: left bottom; }
   @media (max-width: 1024px) {
@@ -2781,7 +2781,7 @@ button.owl-next {
   width: 100%;
   min-height: 196px;
   margin-top: 29px;
-  background-image: url("../img/kit-img-4.png");
+  background-image: url("img/kit-img-4.png");
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: cover; }
@@ -2839,7 +2839,7 @@ button.owl-next {
   width: 670px;
   min-height: 316px;
   margin-top: 29px;
-  background-image: url("../img/kit-img-6.png");
+  background-image: url("img/kit-img-6.png");
   background-repeat: no-repeat;
   background-position: right top; }
   @media (max-width: 1024px) {
@@ -2916,7 +2916,7 @@ button.owl-next {
   border-image-width: 60px;
   border-image-slice: 190;
   border-image-outset: 55px 0px 0px 0px;
-  background-image: url("../img/feedback-bg.jpg");
+  background-image: url("img/feedback-bg.jpg");
   background-repeat: no-repeat;
   background-position: top right; }
   @media (max-width: 1024px) {
@@ -3049,7 +3049,7 @@ button.owl-next {
   height: 45px;
   padding-left: 5px;
   padding-right: 5px;
-  background-image: url("../img/arrow-left.svg");
+  background-image: url("img/arrow-left.svg");
   background-repeat: no-repeat;
   background-size: contain;
   font-size: 0; }
@@ -3057,7 +3057,7 @@ button.owl-next {
 .owl-carousel .owl-nav button.owl-prev {
   left: auto;
   right: -22px;
-  background-image: url("../img/arrow-right.svg"); }
+  background-image: url("img/arrow-right.svg"); }
 
 @media (max-width: 425px) {
   .owl-carousel .owl-nav button.owl-prev,
@@ -3066,7 +3066,7 @@ button.owl-next {
 
 .owl-carousel .owl-nav button.owl-next:hover {
   background: none;
-  background-image: url("../img/arrow-left.svg");
+  background-image: url("img/arrow-left.svg");
   background-repeat: no-repeat;
   background-size: contain;
   font-size: 0;
@@ -3076,7 +3076,7 @@ button.owl-next {
 
 .owl-carousel .owl-nav button.owl-prev:hover {
   background: transparent;
-  background-image: url("../img/arrow-right.svg");
+  background-image: url("img/arrow-right.svg");
   background-repeat: no-repeat;
   background-size: contain;
   font-size: 0;
