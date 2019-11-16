@@ -441,7 +441,7 @@ button.owl-next {
       z-index: 999; } }
   @media (max-width: 767px) {
     .main-nav__btn {
-      right: 13px; } }
+      right: 20px; } }
 
 .main-nav__btn::after {
   position: absolute;
