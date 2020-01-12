@@ -1,0 +1,97 @@
+.review {
+  position: relative;
+  padding: 45px 0 70px;
+
+  &:after {
+    .sloped();
+  }
+
+  &--width-fix:after {
+    width: 100%;
+  } // bugfix for Chrome and Opera
+
+  @media @tablet {
+    padding: 70px 0 80px;
+  }
+
+  @media @desktop {
+    padding-top: 185px;
+    padding-bottom: 95px;
+    background: data-uri('../img/research__quotes.svg') 50% 75px no-repeat;
+  }
+}
+
+.review__inner-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.review__item {
+  padding: 0 20px 35px;
+  line-height: 30px;
+
+  @media @tablet {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 35px;
+  }
+
+  @media @desktop {
+    box-sizing: content-box;
+    max-width: 690px;
+    margin: 0 auto;
+  }
+}
+
+.review__description {
+  display: none;
+
+  @media @tablet {
+    display: block;
+    order: 3;
+    font-size: @font-size-base;
+    line-height: 30px;
+  }
+
+  @media @desktop {
+    font-size: @font-size-small_desktop;
+  }
+}
+
+.review__header {
+  margin-bottom: 15px;
+  line-height: 25px;
+  font-size: @font-size-medium;
+  font-weight: bold;
+
+  @media @tablet {
+    order: 2;
+    margin-bottom: 0px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media @desktop {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+.review__text {
+  font-size: @font-size-base;
+  font-weight: normal;
+  color: @blue-medium;
+  quotes: "\00ab" "\00bb";
+
+  @media @tablet {
+    order: 1;
+    margin-bottom: 35px;
+    font-size: @font-size-small_tablet;
+    line-height: 30px;
+  }
+
+  @media @desktop {
+    quotes: none;
+  }
+}

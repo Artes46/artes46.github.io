@@ -1,0 +1,340 @@
+.form-title-wrapper {
+  @include container();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 177px;
+  background-color: $bg-grey;
+
+}
+.form__type > input[type="radio"]:checked + .form__type-radio > label::after {
+
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #62d1ba;
+  top: 14px;
+  left: 14px;
+}
+.form {
+  @include container();
+  padding-top: 30px;
+  padding-bottom: 55px;
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 0;
+
+  }
+}
+.form-title {
+  font-size: 27px;
+  line-height: 30px;
+  color: #000000;
+}
+.form__descr {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 13px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 60px;
+  }
+}
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 33px;
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+    // &:nth-child(2n) {
+    //   background-color: #f1f1f1;
+    // }
+  }
+}
+.form__legend-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  @media (min-width: $tablet-width) {
+    width: 167px;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  @media (min-width: $desktop-width) {
+    width: 175px;
+    margin-top: 14px;
+}
+
+}
+.form__legend-wrapper > legend {
+  margin-right: 28px;
+  color: #62d1ba;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.form__legend-line {
+  width: 100%;
+  height: 1px;
+  background-color: #62d1ba;
+  @media (min-width: $tablet-width) {
+  display: none;
+
+  }
+}
+.form__type {
+  @media (min-width: $tablet-width) {
+    width: 501px;
+    padding-right: 167px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 875px;
+    padding-right: 175px;
+  }
+}
+
+.form__type label {
+  position: relative;
+  min-height: 40px;
+  margin-bottom: 21px;
+  display: flex;
+  align-items: center;
+  padding-left: 62px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000000;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__type-radio label {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+  }
+  &::after {
+
+    content: none;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #62d1ba;
+    top: 14px;
+    left: 14px;
+  }
+}
+
+.form__type-checkbox {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0;
+  }
+}
+.form__type-checkbox label {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000000;
+    left: 0;
+    top: 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 17px;
+    background-image: url(../img/tick-mobile.png);
+    top: 14px;
+    left: 11px;
+  }
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 262px;
+  }
+}
+.form__type-text {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    display: block;
+  }
+  @media (min-width: $desktop-width) {
+    padding-right: 175px;
+  }
+}
+.form__tel {
+  @media (min-width: $desktop-width) {
+    padding-right: 175px;
+  }
+}
+.form__email {
+  @media (min-width: $desktop-width) {
+    padding-right: 175px;
+  }
+}
+.form__type-text input {
+  @media (min-width: $tablet-width) {
+    margin-left: 23px;
+    padding: 20px;
+  }
+}
+.form__tel input,
+.form__email input {
+  position: relative;
+  @media (min-width: $tablet-width) {
+    padding: 20px;
+  }
+}
+
+.form__type-text label {
+  padding: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+      width: 100%;
+      align-items: center;
+  }
+}
+.form__type-text label input,
+.form__email input,
+.form__tel input {
+  width: 100%;
+  height: 50px;
+  margin-top: 5px;
+  border: none;
+  border-bottom: 2px solid #000000;
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: #444444;
+    opacity: 0.3;
+  }
+  &:hover {
+      border-bottom: 2px solid #62d1ba;
+  }
+  &:active {
+      border-bottom: 2px solid #62d1ba;
+  }
+}
+
+.form__email legend {
+  width: 100px;
+}
+.form__email input,
+.form__tel input {
+  position: relative;
+  padding-right: 36px;
+}
+.textarea-block {
+  margin-bottom: 0;
+  padding-bottom: 50px;
+}
+.textarea-block textarea {
+  width: 100%;
+  border: 2px solid #000000;
+  height: 142px;
+  margin-bottom: 18px;
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: #444444;
+    opacity: 0.3;
+  }
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+  &:active {
+    border: 2px solid #62d1ba;
+  }
+  @media (min-width: $tablet-width) {
+    max-width: 74.8%;
+    margin-bottom: 0;
+  }
+}
+.textarea__btn-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 53px;
+    align-items: center;
+    width: 100%;
+  }
+  @media (min-width: $desktop-width) {
+    padding-right: 175px;
+    padding-left: 175px;
+  }
+}
+.textarea__fields-info {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 32px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+.textarea__btn {
+  line-height: 16px;
+}
+.form__input-icon-wrap {
+  position: relative;
+}
+.form__input-icon {
+  position: absolute;
+  top: 15px;
+  right: 4px;
+}
+.form__fields-wrap {
+  position: relative;
+  align-items: top;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.form__tel input,
+.form__email input,
+.textarea-block textarea {
+  @media (min-width: $tablet-width) {
+    width: 74.8%;
+  }
+  @media (min-width: $desktop-width) {
+    width: 80%;
+    max-width: 700px;
+  }
+}
+.form__type-checkbox label:hover::before,
+.form__type label:hover::before {
+  border: 2px solid #62d1ba;
+}
+.form__type-checkbox label:active::before,
+.form__type label:active::before {
+  border: 2px solid #c7c7c7;
+}

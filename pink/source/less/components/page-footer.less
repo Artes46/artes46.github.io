@@ -1,0 +1,147 @@
+.page-footer {
+  display: none;
+
+  @media @tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 40px;
+  }
+
+  @media @desktop {
+    padding: 70px 10%;
+  }
+
+  @media @desktop-full {
+    padding-left: 17%;
+    padding-right: 17%;
+  }
+}
+
+.page-footer__logo {
+  display: block;
+  align-self: flex-start;
+  width: 145px;
+  height: 40px;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-size: 145px auto;
+  .retinify("../img/page-footer__logo-tablet.png");
+
+  &:active {
+    opacity: .3;
+    transition: none;
+  }
+
+  @media @desktop {
+    margin-left: 10px;
+    .retinify("../img/page-footer__logo-desktop.png");
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 180px;
+  max-width: 50%;
+  margin-left: 40px;
+
+
+  @media @desktop {
+    margin-left: 70px;
+  }
+}
+
+.social-links__item {
+  display: block;
+  width: 52px;
+  height: 51px;
+  margin-right: 12px;
+  font-size: 0;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:active {
+    opacity: .1;
+    transition: none;
+  }
+
+  &--twitter {
+    background-image: data-uri("../img/social-links__item--twitter.svg");
+  }
+
+  &--fb {
+    background-image: data-uri("../img/social-links__item--fb.svg");
+  }
+
+  &--youtube {
+    background-image: data-uri("../img/social-links__item--youtube.svg");
+  }
+
+  @media @desktop {
+    &:hover {
+      border-color: @blue-medium;
+      transition: all 0.15s ease;
+    }
+
+    &:active {
+      transition: none;
+    }
+  }
+}
+
+.page-footer__copyright {
+  font-size: @font-size-base;
+  line-height: 18px;
+  color: @blue-medium;
+
+  @media @desktop {
+    margin-right: 10px;
+    font-size: @font-size-small_desktop;
+  }
+}
+
+.page-footer__copyright-text {
+  display: flex;
+  align-items: center;
+  height: 34px;
+}
+
+.page-footer__copyright-link {
+  display: inline-block;
+  width: 27px;
+  height: 34px;
+  margin: 0 15px;
+  font-size: 0;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.page-footer__copyright-icon {
+  fill: @red;
+
+  &:active {
+    opacity: .1;
+    transition: none;
+  }
+
+  @media @desktop {
+    &:hover {
+      fill: @blue-medium;
+      transition: all 0.15s ease;
+    }
+
+    &:active {
+      transition: none;
+    }
+  }
+}

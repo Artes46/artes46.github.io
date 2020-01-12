@@ -1,0 +1,54 @@
+.offer {
+  position: relative;
+  padding: 40px 0 60px;
+  text-align: center;
+
+  &:after {
+    .sloped();
+  }
+
+  &--width-fix:after {
+    width: 100%;
+  } // bugfix for Chrome and Opera
+
+  @media @tablet {
+    padding: 50px 40px 80px;
+  }
+
+  @media @desktop {
+    padding-top: 65px;
+    padding-bottom: 85px;
+  }
+}
+
+.offer__title {
+  margin-bottom: 25px;
+  font-size: @font-size-big;
+  line-height: 30px;
+  font-weight: @light;
+  color: @blue-medium;
+
+  @media @tablet {
+    margin-bottom: 0;
+    font-size: @font-size-big_tablet;
+    line-height: 50px;
+  }
+
+  @media @desktop {
+    font-size: @font-size-big_desktop;
+    line-height: 60px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+
+    @media @tablet {
+      padding: 0 20%;
+      margin-bottom: 20px;
+    }
+
+    @media @desktop {
+      margin-bottom: 90px;
+    }
+  }
+}

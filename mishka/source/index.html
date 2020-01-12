@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+
+  <title></title>
+</head>
+<body>
+  <!-- Начало svg спрайта -->
+  <svg style="display:none">
+    <symbol id="cart" viewBox="0 0 21 18">
+      <image  width="21" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAASCAMAAACDzGUcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAAiHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8AAAChcy5EAAAAEXRSTlMAIzMGDS0mExApChYaMAMdIJzJR6MAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wMNEiQoMjFfwwAAAIBJREFUGNNtUNESwyAIoylW20Lr/3/tUDort+Uh3OUkiRA5Fqy0YqEARjJO4KBuyMYZ2ywW7H3uKJP6XXWjB++mOxEdzJxwsuNEMj4I/0AClQiFtKQrlLx64v0EvNG3sfy4SutoPjOgvXsNHyqoYTrGG+ikKsZt63Ct48Y5NGg9PwwlBLESLjgmAAAAAElFTkSuQmCC"/>
+    </symbol>
+    <symbol id="search" viewBox="0 0 18 18">
+      <image  width="18" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAMAAABhEH5lAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAM1BMVEUAAAAiHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8AAAAMIbvwAAAAEHRSTlMAEykzIw0KAzAdGiAGJi0WNT4OLQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAw0SJQ+OINvpAAAAfklEQVQY03WP2w7DMAhDCbQLudD+/9+OGrJMmuYndGTZmMhVWFzHSUsvAMCaREW09T6ccTD3DFzTr4YcJ5lQnU2YtK7UM2xppgwxoL6R/UdjowvoiBbK9jtaeD8d7W5jrCu6Qp4Hhc0uzCzBWq7W8WE0m7nu+uQvRl+dQj9M30T0A2nYqi0lAAAAAElFTkSuQmCC"/>
+    </symbol>
+    <symbol id="interior" viewBox="0 0 40 62">
+        <image width="40" height="62" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAA+CAMAAABur6nZAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEUUkID///8UkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAAAAA3RlsHAAAAEnRSTlMAAFCAKBg4WHAQMAhIaCBAYHiepbQLAAAAAWJLR0QSe7xsAAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+MDDRItNPfyuMUAAAE+SURBVEjHxdXJFoMgDAVQKoNgkOH/f7aAiLRqwsKevp3Hu3gqiYydMnE+HVevmrMTPEXcQMmRyA4qDKoOzhicO6gxqA9oOBrT4ILDpcEJh1ODGod6h8CJQIWCgqJCS0Fb4UrBdYNkxVIyQUdDV6CnoS8w0DAUSDvOMxyomEsOVcwliUO7Z04wjsD4wufqiMTn6ogaq5hKMh1DPbc61LprPSX9Hc18HuskYloOkGdilWkhZDpBOqr5Tp4ZXzdFCHIbs2iBGcPAxqXdudk9+T3IkSWVv6n7EwTnYAh+5haqUKIo2E6nJeBx6AwKu7lwz0A5CrvZBRy2baCJp7ajr6c9jSAg+6p4D2vJQH/rfTwpKPeBp+BWMjIaho+KDxzcUdh2liJg21kzAY2vMU90BP8VuIZw+r9ruIQXPxz3S/gG/JAWBqoSnjEAAAAASUVORK5CYII="/>
+    </symbol>
+    <symbol id="toy-svg" viewBox="0 0 60 60">
+        <image width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEUUkID///8UkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAUkIAAAAA3RlsHAAAAEnRSTlMAABhIaIBgQBAIeFAgKHA4MFgpezDrAAAAAWJLR0QSe7xsAAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+MDDRItNYD1iFMAAAJfSURBVEjH7ZfJgsQQEIZlsRO8/8uO2FIlpNNzmcu4tfap5a9CCJmMddtpGowLOL+AMUElo2Bs8isYsZH+ClYYZt/Aq+4sr69hqamxB7BrONXyHeyizyZadxuLg/uYbE6pcs+wtDyuTiYN3o+fcwdjgVs5hAWMM+A4QAxUizsscIJ3YNsc6C8lbjCn3Tg2b+Jw+uj/4TfY4gVq+iMmpIeldXDJscLVKzSufEtak4cR6ULmd20JgTAhvjivgpcLUw7AZkcVmAaGUXmyM58FFiE5ilmD3EZwFi6IDOcWChKyKEc7oJey/LDF7VzIStvMC991ZNzZi5JXnbfl8koYr5Z2dpO1KcD2tpdAUgnchDvmsNBHFZq4FiYEDFRdOVh+VadlMSTuU3F/AXHOxo5UKvakRbWra4VEX0mKoJbZVpfYQUueg63V7JklUnJXQy95xi1JQgnW18Mg60OuaQJku7xpVVRMJI+LCXI51HzMoQdn4tRqeKBwu1hhLThQw+2M62Qr8tQKA2mFDaDGss3/IeP9CerumU8YHsrGTJeNKUxVk21NOVVNB3Or+ht8NhuQ7VYBH2Agm2xB8NG6IYxvZFz1L2AgTgyWTRbN4OvOkHq6ZA5TmoxbRX8Fc9SN//Bfw1z9Flb8qYKe4XiAP9XuE8xMu6vGXTOHlYcX3bBfpzCX/TuMvYXZ/R02OKOGcLtf+4drJ9sAVnxZJnAn2x2OB/jTkxnK1sPpAH9+b1+yYbgc4B8e6+2uQHA9Tz9+YxTZAMzadf3i6yZd8Q0+wCvjBZxkK7DicP4VHK/TDGv0NYjgHzQ6NRoFRK+LAAAAAElFTkSuQmCC"/>
+    </symbol>
+    <symbol id="icon-1" viewBox="0 0 32 37">
+        <image width="32" height="37" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAlCAMAAAAUaRt1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEVj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAABp8wiPAAAAEHRSTlMAcN+PMCCA789gEFCfv0CvcngWuQAAAAFiS0dEEeK1PboAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAxcSCzgCPsAxAAABFUlEQVQ4y3VUWwKEIAg03xiU9z/tZi6Kj/gbRGYYMqVkHDpnfajPMPkN83Vu8z/s7tRZ5bnAKzvXFPIQuSCGWUq7K8OL9nkbrhPsC46VQUNKoFcOYHGpoMRioRWkMJD+JYXUVZ61AcO3RTjlnFhSxIgKwnUJmqGeV8I+nKPm1YdwFXSFbx/y7f298RryNlYfxpA+2E1FGD4Jh0TY2O+CeIbHH4Q0LrXKT4CPY6qm8BJSXvILK1B8C5/sGXgJCTlffWdRzhAZJ0UTv4VS0eaGPpTpjyG39zCldEfVGmmbnnym9jVIt6NIPNNeAsbFZxoasNuSxNqZYKrwfnMuB6duHMhtWim9Vs4/AJDD5AhqDev/bciL2z9nPSk32sGZAgAAAABJRU5ErkJggg=="/>
+    </symbol>
+    <symbol id="icon-2" viewBox="0 0 35 34">
+        <image  width="35" height="34" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAiCAMAAADiW5DOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAABZNXjjAAAAEXRSTlMAACBwr+/fQL9QzzCPYIAQn5LMP6cAAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wMXEgs5dTnwpwAAAYVJREFUOMuFVFdyxSAMFGCKwYB9/8tGBVEymYl/nh9etEUCgPVYd/mPnnA5q4vGmIWI6duf6y/M7XdItlDKiXGhgN0KPbj0fW7HVFxuAG0g/A39wp961sEvqUMMyoMvuUBpimm0mOf2V7ZcHar/mmAKV+3vkFEZiFp4xWkdfH87G8OKzIMWuHKETpiIMjyv2kzQKjy0gxT6iphAYKkOZRAAPNNpMKSG/jhRQwRSkXkSScU6VWSU/LIR5ckiIRfU02XTjdqZpwnPo1aMS+CFPFg1MrYIDysFLh4HT5oJFC9B4wbCkEiAd7VMGqqRTcxuZGtofwZmD2w2lIMeX+AMbGsoCBKnannfjFBDy3gz5gY1EoeRoPoenSoDdg9Mg54JEAXRLiPa0DaM8kqg2ViTKQ3tWYAjotvoMK+gpzGZqjmrOpnU0CR1R6KfHbO6JlNzeHWq2jo7dQVNPrtOlV3n6z7PIBngivY4g0qvJ5U75H7fCfG4E8hY/+9uSeWPu4XvqCBM5x31AylQJ9yVaMm5AAAAAElFTkSuQmCC"/>
+    </symbol>
+    <symbol id="icon-3" viewBox="0 0 47 27">
+        <image width="47" height="27" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAbCAMAAADbEiYlAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAAD90GwXAAAAEHRSTlMAAGDfUM+/QIAg768QcJ8w7iqiSAAAAAFiS0dEEeK1PboAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAxcSCzl1OfCnAAAAlElEQVQ4y83U3QqAIAwF4DX/lqX2/k/bJDG6yRNEdC7jU2y6EbHZ0Bg7EcO6hkl3dx6LUkO6KNBNpjOi9iM/yyB89WFUGH/r4yJLxL2sevBVUJ/arybMu14bB/nUfYL8eR0B8tw9Qz53n7H6lMYLWM94LCgR9HokG2y+fPGvvp+h/09/adPnUXO1+Dofns4fso/m2w6uqDALylU5YQAAAABJRU5ErkJggg=="/>
+    </symbol>
+    <symbol id="icon-4" viewBox="0 0 55 23">
+        <image  width="55" height="23" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAXCAMAAACYqSdCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAABZNXjjAAAAEXRSTlMAAM+vEO9QQJ+/j3BgIN+AMK5hmhkAAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wMXEgs4Aj7AMQAAAK9JREFUOMullEkSwyAMBDGLQZjF/P+zwTgFhL3I3HTomhGSQNjlIhRNdLxC9Bdk5yJXgjPLyFUg42tcBTpBgMUCg7w4bXE1WAuLBocoD5KsDz6c0gUXpMzI0COXc6BKjo+zEh8qpGFW59w56U/5PDGyTpydcH42IlWSrnK+PchK86/fbn/ohiHXe8/Hckg25/fdFzuYfGtfNvezvgcBybl7DyVm1u5v8953/5fN/+wDKwUsbk03k5QAAAAASUVORK5CYII="/>
+    </symbol>
+    <symbol id="icon-5" viewBox="0 0 34 27">
+        <image  width="34" height="27" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAbCAMAAAAu7K2VAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAM1BMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAAC2WhVlAAAAD3RSTlMAACCAzxBw75/fQL8wj69yoTsgAAAAAWJLR0QQlbINLAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+MDFxILOXU58KcAAACtSURBVCjPrdPREsMQEAXQaxEi0v3/vy1KihB96H1bc2ZHsgsIIak4REmNFF1qAoSIJ5vhHLPd6kQsV7F9HYnkJrKvBYgXobbtKBZmRQxWgvlPZF/f5YcvcivigONZHGEAftEkjvF8EudnGdRcqLwvejoEozOBnxjjy9bNTBQXGZokvgR0u7NKoiLQr+6X5ddQkW6JZTltCPw19d1hTMITyy00ZiTcOuyGpfpEiDf/wScTgy5r4wAAAABJRU5ErkJggg=="/>
+    </symbol>
+    <symbol id="icon-6" viewBox="0 0 33 32">
+        <image width="33" height="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAMAAACrZuH4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAABZNXjjAAAAEXRSTlMAACCfz2CvMO+/EICPQN9wUBkqcmkAAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wMXEgs4Aj7AMQAAALNJREFUOMvtkMESgyAMRFNQSYBo8/8/2w1qCz3UazvTvZBd37BBoqYQzWyad0PzBLeENt/2KLE1SYbJshtOHYFMSgU2Zcq4gGtBtLyIAMAPfIu0gPMCmBehZsXPvGIwW71rJOhMtS2gPsahhSqq5yNHEVCswaEjfDvjuOndr9C6Pp8CImzFdTzXWM4ptnwLdAaHhGQMmOyCsB8idFSi9JbQlfyvJ+lUqfY2NUI/7KF/4luJB38tMGzCDkMRAAAAAElFTkSuQmCC"/>
+    </symbol>
+  <!-- Конец svg спрайта -->
+
+  </svg>
+
+    <header class="main-header">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__list-wrapper">
+            <ul class="main-nav__list main-nav__list-1">
+              <li class="main-nav__list-item">
+                <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="" class="main-nav__link">Вязание на заказ</a>
+              </li>
+            </ul>
+            <div class="main-nav__logo">
+              <a class="main-nav__logo-link" href="index.html">
+                <picture>
+                  <source media="(min-width:"$tablet-width")" srcset=""><source/>
+                  <source media="(min-width:"$desktop-width")" srcset=""><source/>
+                  <img class="main-nav__logo-img" src="img/mishka-logo-tablet.png" srcset="" alt="">
+                </picture>
+              </a>
+              <div class="main-nav__toggle">
+                <button class="main-nav__toggle-btn" type="button" name="button"></button>
+              </div>
+            </div>
+            <ul class="main-nav__list main-nav__list-2">
+              <li class="main-nav__list-item main-nav__search">
+                <a class="main-nav__search-link" href="">Поиск по сайту</a>
+                <svg class="menu-svg-icon" width="21" height="18">
+                	<use xlink:href='#search'/>
+                </svg>
+              </li>
+              <li class="main-nav__list-item main-nav__cart">
+                <p class="cart-text">Корзина: пока пуста</p>
+                <svg class="menu-svg-icon" width="21" height="18">
+                	<use xlink:href='#cart' />
+                </svg>
+              </li>
+            </ul>
+            <ul class="main-nav__list main-nav__list-3">
+              <li class="main-nav__list-item">
+                <a href="" class="main-nav__link">Новые поступления</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="" class="main-nav__link">Распродажа</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list main-nav__list-4">
+                <li class="shipping">
+                  Бесплатная доставка по России
+                </li>
+              </ul>
+          </div>
+        </div>
+
+      </nav>
+    </header>
+    <main>
+      <section class="for-home">
+        <div class="for-home__title-wrapper">
+          <p class="for-home__descr">Милые штучки ручной работы для дома</p>
+        </div>
+        <div class="for-home__items">
+          <a href="#" class="for-home__item">
+            <p class="for-home__item-descr">Предметы интерьера</p>
+            <svg class="for-home__item-icon" width="40" height="62">
+              <use xlink:href='#interior'/>
+            </svg>
+          </a>
+          <a href="#" class="for-home__item">
+            <p class="for-home__item-descr">Детские игрушки</p>
+            <svg class="for-home__item-icon" width="60" height="60">
+              <use xlink:href='#toy-svg'/>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="index-product">
+        <div class="index-product__title-wrapper">
+          <span class="index-product__status">Товар недели</span>
+          <p class="index-product__title">Вязаные корзинки</p>
+        </div>
+        <div class="index-product__content-wrapper">
+          <div class="index-product__text-block">
+            <p class="index-product__descr">
+              Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+            </p>
+            <table class="index-product__specifications">
+              <tbody>
+                <tr class="index-product__specifications-row">
+                  <td class="index-product__specifications-cell">Цвет:</td>
+                  <td class="index-product__specifications-cell">«Тиффани»/серый</td>
+                </tr>
+                <tr class="index-product__specifications-row">
+                  <td class="index-product__specifications-cell">Диаметр:</td>
+                  <td class="index-product__specifications-cell">25 см</td>
+                </tr>
+                <tr class="index-product__specifications-row">
+                  <td class="index-product__specifications-cell">Высота:</td>
+                  <td class="index-product__specifications-cell">15 см</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="index-product__text-wrapper">
+              <p class="index-product__cost">Цена: 990 руб.</p>
+              <button class="btn index-product__btn" type="button" name="button">
+                Заказать
+              </button>
+            </div>
+          </div>
+          <div class="index-product__img-block">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/triple-set-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg">
+                  <img src="img/triple-set-mobile.jpg" alt="">
+                </picture>
+              </div>
+        </div>
+
+      </section>
+      <section class="advantages">
+        <h2 class="advantages__title">Коротко о нас:</h2>
+        <div class="advantages__items">
+          <div class="advantages__item">
+            <svg class="advantages__item-icon" width="32" height="37">
+              <use xlink:href='#icon-1'/>
+            </svg>
+            <p class="advantages-item__descr">Экологически <br> чистые материалы</p>
+          </div>
+          <div class="advantages__item">
+            <svg class="advantages__item-icon" width="47" height="27">
+              <use xlink:href='#icon-3'/>
+            </svg>
+            <p class="advantages-item__descr">Скандинавский стиль <br> по российской цене</p>
+          </div>
+          <div class="advantages__item">
+            <svg class="advantages__item-icon" width="34" height="27">
+              <use xlink:href='#icon-5'/>
+            </svg>
+            <p class="advantages-item__descr">Увеличивает лайки <br> на фотографиях</p>
+          </div>
+          <div class="advantages__item">
+            <svg class="advantages__item-icon" width="35" height="34">
+              <use xlink:href='#icon-2'/>
+            </svg>
+            <p class="advantages-item__descr">Связано вручную с <br> любовью и умилением</p>
+          </div>
+          <div class="advantages__item">
+            <svg class="advantages__item-icon" width="55" height="23">
+              <use xlink:href='#icon-4'/>
+            </svg>
+            <p class="advantages-item__descr">Поддержка отечественного <br> производителя</p>
+          </div>
+          <div class="advantages__item">
+            <svg class="advantages__item-icon" width="33" height="32">
+              <use xlink:href='#icon-6'/>
+            </svg>
+            <p class="advantages-item__descr">Поставляется в <br> подарочной упаковке</p>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+          <h2 class="reviews__title">Отзывы</h2>
+          <p class="reviews__description">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <div class="reviews__bottom-block">
+            <div class="reviews__autor-wrapper">
+              <p class="reviews__autor-name">Анастасия Красильникова</p>
+              <p class="reviews__autor-link">@misssssiskras</p>
+            </div>
+            <div class="reviews__arrow-wrapper">
+              <a href="#" class="reviews__arrow reviews__arrow--left">
+                <img class="reviews__arrow-img" src="img/huge-arrow-left.svg" alt="">
+              </a>
+              <a href="#" class="reviews__arrow reviews__arrow--right">
+                <img class="reviews__arrow-img" src="img/huge-arrow-right.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <button class="btn reviews__btn">Написать</button>
+      </section>
+      <section class="contacts">
+        <div class="contacts__text-wrapper">
+          <div class="contacts__info-wrapper">
+            <div class="contacts__title-wrapper">
+              <h2 class="contacts__title">Контакты</h2>
+              <img src="img/flag.svg" alt="" class="contacts__title-img">
+            </div>
+            <div class="contacts__email">
+              <span class="contacts__email-title">e-mail:</span>
+              <span class="contacts__email-item">info@mimimishkashop.ru</span>
+            </div>
+            <div class="contacts__adress">
+              <span class="contacts__adress-title">адрес:</span>
+              <p class="contacts__adress-item">
+                г. Санкт-Петербург, <br>
+                ул. Большая Конюшенная, <br>
+                д. 19/8, офис 101</p>
+              </div>
+          </div>
+          <div class="contacts__map">
+            <picture>
+              <source media="(max-width:1300px)" srcset="img/map-desktop@1x.jpg 1x">
+              <source media="(max-width:768px)" srcset="img/map-tablet@1x.jpg 1x">
+              <img src="img/map-mobile@1x.jpg" alt="" class="contacts__map-img">
+            </picture>
+          </div>
+          <a href="form.html" class="btn contacts__btn">Напишите нам</a>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <!-- <img src="img/logo-footer.svg" alt="" class="footer__logo"> -->
+      <svg class="footer__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="34" viewBox="0 0 102 34">
+        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+      <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+         <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <rdf:Description rdf:about=""/>
+         </rdf:RDF>
+      </x:xmpmeta>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <?xpacket end="w"?></metadata>
+      <image id="logo-footer.svg" width="102" height="34" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAAAiCAMAAACayFwqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAAAACSUWGxAAAAEHRSTlMAYN/vML+AUBBwryBAz4+fDwva1QAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAw0SMCb7J6WRAAAC/UlEQVRIx+WXy2KtIAxFBSQioPD/X1shD4La097BHZVJjzyyQnYCdFlem7HVrct/b77WCn8QswEE+Qh79OkfMZ4/1rwD7BmthZyDmhiviVkoR61H+I39YGAlzNk7cnGVWus4tdmrVfV9o6QM4H00OFacMzJkrlWlhcJ7wNFaXbmmd45RZq91LawaU9TvXCx7F3nMTsGKbzFZHaolZncMazO2k+UR6HTZiZDX1KzXFh6n/emrBnRZx2dzYFMYQKMqV4ZMzaeCnQ6D0NeJ2qF/tR9wtM7m4MEZtaflthurMWm4dAxfeRzjRxW/Mcbg30yfs+Qbh6jqXCnkNy6GV0wZIna7+TuMeE9DJ8dCbUYn+YypQaSpbhgJP2KAMWMz3WRS8wv95WxZRSjehgroDZNQJcaozSzaN65zwhwsK/7UGF2NPSCnGMuo5ryZpHcTZ0z3+ag3bZ4YCRIN0UQzAj8v4vlQJQlSfcXEd4zt4aOJPXfgFxgXKGYTpu25Wt9bP4kHBlXqSZITmxCMURgLWTDXkmPEbyWPEvd10QIuO3I2AFadPoVNjHzFFSwJutcGXC953rB4tOarrTlSYKHqRhgVEd7n3DxiuoLt+NkZY+vtXotYUSBBtMh1uNKZsZ2eXVuG0/vCZ2fHBL5TEmOme03KMfXpoMX1vC9Pla31GyJjH6lvJUvgjkGt1VE5YQ7KafMJY1m2+D1muWPUEV1dq0bHyf+G0fV1GfiMSQqjjmiskoIzPmICpfITk/CJkYbVB+YcHfAZg14tD8xqKRIZ3bhhgk5Jvno/YQCFvGOAnU1DG/8uliSBxnDqMsbYfpowZld0UGcYSNo+Mb0s/E3XG4YaPWC4TPrtuEnRgeDfMH0y1dYds80YfkFRmfCDhhJp116hNmMCRWifMIF2v88YudvpiBKswUdRlqBto+DkRjrk/DoX0ct2L87DbwPDt+BaXRSN6PzL1L+J4ND8sOPsu9DXv0XXo1Yu9pRfn+6nXrXg67a5HffH9Gye/2ilvLy2L1jlWQBgUWLiAAAAAElFTkSuQmCC"/>
+      </svg>
+
+      <div class="footer__social-wrapper">
+        <img src="img/insta.svg" alt="" class="footer__social-item">
+        <img src="img/fb.svg" alt="" class="footer__social-item">
+        <img src="img/twitter.svg" alt="" class="footer__social-item">
+      </div>
+      <div class="footer__developed-wrapper">
+        <p class="footer__developed-text">Разработано</p>
+        <img src="img/htmlacademy.svg" alt="" class="footer__developed-img">
+      </div>
+    </footer>
+
+    <div class="popup__overlay">
+        </div>
+      <section class="popup">
+        <h3 class="popup__title">Добавить в корзину</h3>
+        <p class="popup__text">Выберите размер:</p>
+        <div class="popup__size-wrapper">
+          <div class="popup__size popup__size-s">
+            s
+          </div>
+          <div class="popup__size popup__size-m">
+            m
+          </div>
+          <div class="popup__size popup__size-l">
+            l
+          </div>
+        </div>
+        <button class="btn popup__btn">Добавить</button>
+      </section>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
